@@ -1,0 +1,148 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\tahfeeth\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3D35FCB3-6C28-4215-9370-82E2F2411183}|tahfeeth\\tahfeeth.csproj|C:\\Users\\hp\\source\\repos\\tahfeeth\\tahfeeth\\addstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D35FCB3-6C28-4215-9370-82E2F2411183}|tahfeeth\\tahfeeth.csproj|solutionrelative:tahfeeth\\addstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D35FCB3-6C28-4215-9370-82E2F2411183}|tahfeeth\\tahfeeth.csproj|c:\\users\\hp\\source\\repos\\tahfeeth\\tahfeeth\\addstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3D35FCB3-6C28-4215-9370-82E2F2411183}|tahfeeth\\tahfeeth.csproj|solutionrelative:tahfeeth\\addstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D35FCB3-6C28-4215-9370-82E2F2411183}|tahfeeth\\tahfeeth.csproj|C:\\Users\\hp\\source\\repos\\tahfeeth\\tahfeeth\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D35FCB3-6C28-4215-9370-82E2F2411183}|tahfeeth\\tahfeeth.csproj|solutionrelative:tahfeeth\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D35FCB3-6C28-4215-9370-82E2F2411183}|tahfeeth\\tahfeeth.csproj|C:\\Users\\hp\\source\\repos\\tahfeeth\\tahfeeth\\viewstudents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D35FCB3-6C28-4215-9370-82E2F2411183}|tahfeeth\\tahfeeth.csproj|solutionrelative:tahfeeth\\viewstudents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D35FCB3-6C28-4215-9370-82E2F2411183}|tahfeeth\\tahfeeth.csproj|C:\\Users\\hp\\source\\repos\\tahfeeth\\tahfeeth\\viewstudents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3D35FCB3-6C28-4215-9370-82E2F2411183}|tahfeeth\\tahfeeth.csproj|solutionrelative:tahfeeth\\viewstudents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53D50188-2D35-4943-BEC3-090BA805C4C6}|Tahfeeth.BLL\\Tahfeeth.BLL.csproj|C:\\Users\\hp\\source\\repos\\tahfeeth\\tahfeeth.bll\\studentbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53D50188-2D35-4943-BEC3-090BA805C4C6}|Tahfeeth.BLL\\Tahfeeth.BLL.csproj|solutionrelative:tahfeeth.bll\\studentbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CEAAAC1-FD8C-47AC-AA91-C662D1D7F2C5}|Tahfeeth.DAL\\Tahfeeth.DAL.csproj|C:\\Users\\hp\\source\\repos\\tahfeeth\\tahfeeth.dal\\studentdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CEAAAC1-FD8C-47AC-AA91-C662D1D7F2C5}|Tahfeeth.DAL\\Tahfeeth.DAL.csproj|solutionrelative:tahfeeth.dal\\studentdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CEAAAC1-FD8C-47AC-AA91-C662D1D7F2C5}|Tahfeeth.DAL\\Tahfeeth.DAL.csproj|C:\\Users\\hp\\source\\repos\\tahfeeth\\tahfeeth.dal\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CEAAAC1-FD8C-47AC-AA91-C662D1D7F2C5}|Tahfeeth.DAL\\Tahfeeth.DAL.csproj|solutionrelative:tahfeeth.dal\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ViewStudents.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\tahfeeth\\tahfeeth\\ViewStudents.cs",
+              "RelativeDocumentMoniker": "tahfeeth\\ViewStudents.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\tahfeeth\\tahfeeth\\ViewStudents.cs",
+              "RelativeToolTip": "tahfeeth\\ViewStudents.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T21:01:37.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ViewStudents.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\tahfeeth\\tahfeeth\\ViewStudents.cs",
+              "RelativeDocumentMoniker": "tahfeeth\\ViewStudents.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\tahfeeth\\tahfeeth\\ViewStudents.cs [Design]",
+              "RelativeToolTip": "tahfeeth\\ViewStudents.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T21:00:18.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\tahfeeth\\tahfeeth\\Program.cs",
+              "RelativeDocumentMoniker": "tahfeeth\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\tahfeeth\\tahfeeth\\Program.cs",
+              "RelativeToolTip": "tahfeeth\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T20:30:34.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddStudent.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\tahfeeth\\tahfeeth\\AddStudent.cs",
+              "RelativeDocumentMoniker": "tahfeeth\\AddStudent.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\tahfeeth\\tahfeeth\\AddStudent.cs [Design]",
+              "RelativeToolTip": "tahfeeth\\AddStudent.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T20:21:03.524Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddStudent.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\tahfeeth\\tahfeeth\\AddStudent.cs",
+              "RelativeDocumentMoniker": "tahfeeth\\AddStudent.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\tahfeeth\\tahfeeth\\AddStudent.cs",
+              "RelativeToolTip": "tahfeeth\\AddStudent.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAiwB4AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T20:17:15.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StudentBLL.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\tahfeeth\\Tahfeeth.BLL\\StudentBLL.cs",
+              "RelativeDocumentMoniker": "Tahfeeth.BLL\\StudentBLL.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\tahfeeth\\Tahfeeth.BLL\\StudentBLL.cs",
+              "RelativeToolTip": "Tahfeeth.BLL\\StudentBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T12:09:22.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StudentDAL.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\tahfeeth\\Tahfeeth.DAL\\StudentDAL.cs",
+              "RelativeDocumentMoniker": "Tahfeeth.DAL\\StudentDAL.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\tahfeeth\\Tahfeeth.DAL\\StudentDAL.cs",
+              "RelativeToolTip": "Tahfeeth.DAL\\StudentDAL.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T12:07:18.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\tahfeeth\\Tahfeeth.DAL\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "Tahfeeth.DAL\\DatabaseHelper.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\tahfeeth\\Tahfeeth.DAL\\DatabaseHelper.cs",
+              "RelativeToolTip": "Tahfeeth.DAL\\DatabaseHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T11:55:04.908Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

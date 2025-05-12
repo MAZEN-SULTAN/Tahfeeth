@@ -1,0 +1,16 @@
+C:\Users\hp\source\repos\tahfeeth\tahfeeth\obj\Debug\tahfeeth.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\tahfeeth\tahfeeth\obj\Debug\tahfeeth.AddStudent.resources
+C:\Users\hp\source\repos\tahfeeth\tahfeeth\obj\Debug\tahfeeth.Properties.Resources.resources
+C:\Users\hp\source\repos\tahfeeth\tahfeeth\obj\Debug\tahfeeth.csproj.GenerateResource.cache
+C:\Users\hp\source\repos\tahfeeth\tahfeeth\obj\Debug\tahfeeth.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\tahfeeth\tahfeeth\bin\Debug\tahfeeth.exe.config
+C:\Users\hp\source\repos\tahfeeth\tahfeeth\bin\Debug\tahfeeth.exe
+C:\Users\hp\source\repos\tahfeeth\tahfeeth\bin\Debug\tahfeeth.pdb
+C:\Users\hp\source\repos\tahfeeth\tahfeeth\bin\Debug\Tahfeeth.BLL.dll
+C:\Users\hp\source\repos\tahfeeth\tahfeeth\bin\Debug\Tahfeeth.DAL.dll
+C:\Users\hp\source\repos\tahfeeth\tahfeeth\bin\Debug\Tahfeeth.BLL.pdb
+C:\Users\hp\source\repos\tahfeeth\tahfeeth\bin\Debug\Tahfeeth.DAL.pdb
+C:\Users\hp\source\repos\tahfeeth\tahfeeth\obj\Debug\tahfeeth.csproj.Up2Date
+C:\Users\hp\source\repos\tahfeeth\tahfeeth\obj\Debug\tahfeeth.exe
+C:\Users\hp\source\repos\tahfeeth\tahfeeth\obj\Debug\tahfeeth.pdb
+C:\Users\hp\source\repos\tahfeeth\tahfeeth\obj\Debug\tahfeeth.ViewStudents.resources

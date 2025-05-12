@@ -1,0 +1,9 @@
+C:\Users\hp\source\repos\tahfeeth\Tahfeeth.BLL\bin\Debug\Tahfeeth.BLL.dll
+C:\Users\hp\source\repos\tahfeeth\Tahfeeth.BLL\bin\Debug\Tahfeeth.BLL.pdb
+C:\Users\hp\source\repos\tahfeeth\Tahfeeth.BLL\bin\Debug\Tahfeeth.DAL.dll
+C:\Users\hp\source\repos\tahfeeth\Tahfeeth.BLL\bin\Debug\Tahfeeth.DAL.pdb
+C:\Users\hp\source\repos\tahfeeth\Tahfeeth.BLL\obj\Debug\Tahfeeth.BLL.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\tahfeeth\Tahfeeth.BLL\obj\Debug\Tahfeeth.BLL.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\tahfeeth\Tahfeeth.BLL\obj\Debug\Tahfeeth.6896A0D1.Up2Date
+C:\Users\hp\source\repos\tahfeeth\Tahfeeth.BLL\obj\Debug\Tahfeeth.BLL.dll
+C:\Users\hp\source\repos\tahfeeth\Tahfeeth.BLL\obj\Debug\Tahfeeth.BLL.pdb
