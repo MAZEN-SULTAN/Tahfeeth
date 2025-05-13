@@ -16,7 +16,7 @@ namespace tahfeeth
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ViewStudents());
+            Application.Run(new AddStudent());
         }
     }
 }

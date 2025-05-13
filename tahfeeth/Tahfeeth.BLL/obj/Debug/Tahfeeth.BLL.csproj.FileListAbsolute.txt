@@ -7,3 +7,12 @@ C:\Users\hp\source\repos\tahfeeth\Tahfeeth.BLL\obj\Debug\Tahfeeth.BLL.csproj.Cor
 C:\Users\hp\source\repos\tahfeeth\Tahfeeth.BLL\obj\Debug\Tahfeeth.6896A0D1.Up2Date
 C:\Users\hp\source\repos\tahfeeth\Tahfeeth.BLL\obj\Debug\Tahfeeth.BLL.dll
 C:\Users\hp\source\repos\tahfeeth\Tahfeeth.BLL\obj\Debug\Tahfeeth.BLL.pdb
+E:\tarteel\Tahfeeth\tahfeeth\Tahfeeth.BLL\bin\Debug\Tahfeeth.BLL.dll
+E:\tarteel\Tahfeeth\tahfeeth\Tahfeeth.BLL\bin\Debug\Tahfeeth.BLL.pdb
+E:\tarteel\Tahfeeth\tahfeeth\Tahfeeth.BLL\bin\Debug\Tahfeeth.DAL.dll
+E:\tarteel\Tahfeeth\tahfeeth\Tahfeeth.BLL\bin\Debug\Tahfeeth.DAL.pdb
+E:\tarteel\Tahfeeth\tahfeeth\Tahfeeth.BLL\obj\Debug\Tahfeeth.BLL.csproj.AssemblyReference.cache
+E:\tarteel\Tahfeeth\tahfeeth\Tahfeeth.BLL\obj\Debug\Tahfeeth.BLL.csproj.CoreCompileInputs.cache
+E:\tarteel\Tahfeeth\tahfeeth\Tahfeeth.BLL\obj\Debug\Tahfeeth.6896A0D1.Up2Date
+E:\tarteel\Tahfeeth\tahfeeth\Tahfeeth.BLL\obj\Debug\Tahfeeth.BLL.dll
+E:\tarteel\Tahfeeth\tahfeeth\Tahfeeth.BLL\obj\Debug\Tahfeeth.BLL.pdb

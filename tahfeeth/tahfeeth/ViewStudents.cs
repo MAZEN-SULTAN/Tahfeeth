@@ -20,7 +20,7 @@ namespace tahfeeth
 
         private void ViewStudents_Load(object sender, EventArgs e)
         {
-            using (SqlConnection conn = new SqlConnection("Data Source=MAZEN-SULTAN;Initial Catalog=TahfeethDB;Integrated Security=True;"))
+            using (SqlConnection conn = new SqlConnection("Data Source=AIMAN-ALSHUJAA;Initial Catalog=TahfeethDB;Integrated Security=True;"))
             {
                 string query = "SELECT StudentId, FullName, BirthDate, EnrollDate, ClassId FROM Students";
                 SqlDataAdapter da = new SqlDataAdapter(query, conn);
@@ -29,6 +29,11 @@ namespace tahfeeth
 
                 dgvStudents.DataSource = dt;
             }
+        }
+
+        private void dgvStudents_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

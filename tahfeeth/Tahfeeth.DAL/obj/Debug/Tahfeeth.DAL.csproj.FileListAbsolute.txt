@@ -4,3 +4,9 @@ C:\Users\hp\source\repos\tahfeeth\Tahfeeth.DAL\obj\Debug\Tahfeeth.DAL.csproj.Ass
 C:\Users\hp\source\repos\tahfeeth\Tahfeeth.DAL\obj\Debug\Tahfeeth.DAL.csproj.CoreCompileInputs.cache
 C:\Users\hp\source\repos\tahfeeth\Tahfeeth.DAL\obj\Debug\Tahfeeth.DAL.dll
 C:\Users\hp\source\repos\tahfeeth\Tahfeeth.DAL\obj\Debug\Tahfeeth.DAL.pdb
+E:\tarteel\Tahfeeth\tahfeeth\Tahfeeth.DAL\bin\Debug\Tahfeeth.DAL.dll
+E:\tarteel\Tahfeeth\tahfeeth\Tahfeeth.DAL\bin\Debug\Tahfeeth.DAL.pdb
+E:\tarteel\Tahfeeth\tahfeeth\Tahfeeth.DAL\obj\Debug\Tahfeeth.DAL.csproj.AssemblyReference.cache
+E:\tarteel\Tahfeeth\tahfeeth\Tahfeeth.DAL\obj\Debug\Tahfeeth.DAL.csproj.CoreCompileInputs.cache
+E:\tarteel\Tahfeeth\tahfeeth\Tahfeeth.DAL\obj\Debug\Tahfeeth.DAL.dll
+E:\tarteel\Tahfeeth\tahfeeth\Tahfeeth.DAL\obj\Debug\Tahfeeth.DAL.pdb

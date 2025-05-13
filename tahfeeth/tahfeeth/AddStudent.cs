@@ -60,7 +60,7 @@ namespace tahfeeth
 
         private void AddStudent_Load(object sender, EventArgs e)
         {
-            using (SqlConnection conn = new SqlConnection("Data Source=MAZEN-SULTAN;Initial Catalog=TahfeethDB;Integrated Security=True;"))
+            using (SqlConnection conn = new SqlConnection("Data Source=AIMAN-ALSHUJAA;Initial Catalog=TahfeethDB;Integrated Security=True;"))
             {
                 string query = "SELECT ClassId, ClassName FROM Classes";
                 SqlCommand cmd = new SqlCommand(query, conn);
@@ -75,6 +75,11 @@ namespace tahfeeth
         }
 
         private void texFullName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
