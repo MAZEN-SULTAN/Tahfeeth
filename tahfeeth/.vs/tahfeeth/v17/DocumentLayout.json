@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "E:\\tarteel\\Tahfeeth\\tahfeeth\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3D35FCB3-6C28-4215-9370-82E2F2411183}|tahfeeth\\tahfeeth.csproj|E:\\tarteel\\Tahfeeth\\tahfeeth\\tahfeeth\\addstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3D35FCB3-6C28-4215-9370-82E2F2411183}|tahfeeth\\tahfeeth.csproj|e:\\tarteel\\tahfeeth\\tahfeeth\\tahfeeth\\addstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3D35FCB3-6C28-4215-9370-82E2F2411183}|tahfeeth\\tahfeeth.csproj|solutionrelative:tahfeeth\\addstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D35FCB3-6C28-4215-9370-82E2F2411183}|tahfeeth\\tahfeeth.csproj|e:\\tarteel\\tahfeeth\\tahfeeth\\tahfeeth\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3D35FCB3-6C28-4215-9370-82E2F2411183}|tahfeeth\\tahfeeth.csproj|E:\\tarteel\\Tahfeeth\\tahfeeth\\tahfeeth\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D35FCB3-6C28-4215-9370-82E2F2411183}|tahfeeth\\tahfeeth.csproj|solutionrelative:tahfeeth\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -77,8 +77,7 @@
               "RelativeToolTip": "tahfeeth\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T20:30:34.968Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T20:30:34.968Z"
             },
             {
               "$type": "Document",
@@ -102,8 +101,7 @@
               "RelativeToolTip": "tahfeeth\\AddStudent.cs",
               "ViewState": "AQIAAEUAAAAAAAAAAAAtwFMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T20:17:15.915Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T20:17:15.915Z"
             },
             {
               "$type": "Document",
