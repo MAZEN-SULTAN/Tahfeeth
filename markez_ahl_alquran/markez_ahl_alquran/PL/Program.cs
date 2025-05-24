@@ -17,7 +17,8 @@ namespace markez_ahl_alquran.PL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AddStudents());
+            Application.Run(new MainForm());
+            
         }
     }
 }
