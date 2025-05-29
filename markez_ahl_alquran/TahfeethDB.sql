@@ -12,7 +12,8 @@ GO
 CREATE TABLE Teachers (
     TeacherID INT PRIMARY KEY IDENTITY(1,1),     -- رقم تعريف فريد للمعلم
     FullName NVARCHAR(100) NOT NULL,             -- اسم المعلم الكامل
-    Salary DECIMAL(10,2) NOT NULL                -- راتب المعلم الشهري
+    Salary DECIMAL(10,2) NOT NULL ,              -- راتب المعلم الشهري
+	PhoneNumber NVARCHAR(20) NOT NULL            --رقم تلفون المعلم 
 );
 
 -- جدول الحلقات (كل حلقة لها اسم ومعلم مرتبط بها)
@@ -29,6 +30,7 @@ CREATE TABLE Students (
     FullName NVARCHAR(100) NOT NULL,             -- اسم الطالب
     Age INT,                                     -- العمر
     JoinDate DATE NOT NULL,                      -- تاريخ الانضمام
+	PhoneNumber NVARCHAR(20) NOT NULL,            --رقم تلفون الطالب 
     ClassID INT NOT NULL,                      -- رقم الحلقة التي ينتمي لها الطالب
     CONSTRAINT FK_Students_Classes FOREIGN KEY (ClassID) REFERENCES Classes(ClassID) -- علاقة الحلقة بالطالب
 );

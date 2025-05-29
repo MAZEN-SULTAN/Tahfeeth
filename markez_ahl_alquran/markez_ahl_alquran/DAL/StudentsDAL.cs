@@ -19,7 +19,7 @@ namespace markez_ahl_alquran.DAL
             {
                 using (SqlConnection conn = db.GetConnection())
                 {
-                    string query = "INSERT INTO Students (FullName, Age, JoinDate, ClassID) VALUES (@FullName, @Age, @JoinDate, @ClassID)";
+                    string query = "INSERT INTO Students (FullName, Age, JoinDate, ClassID, PhoneNumber) VALUES (@FullName, @Age, @JoinDate, @ClassID, @PhoneNumber)";
                     SqlCommand cmd = new SqlCommand(query, conn);
 
                     // إضافة القيم
@@ -27,6 +27,7 @@ namespace markez_ahl_alquran.DAL
                     cmd.Parameters.AddWithValue("@Age", student.Age);
                     cmd.Parameters.AddWithValue("@JoinDate", student.JoinDate);
                     cmd.Parameters.AddWithValue("@ClassID", student.ClassID);
+                    cmd.Parameters.AddWithValue("@PhoneNumber", student.PhoneNumber);
 
                     conn.Open();            // فتح الاتصال
                     cmd.ExecuteNonQuery();  // تنفيذ الأمر

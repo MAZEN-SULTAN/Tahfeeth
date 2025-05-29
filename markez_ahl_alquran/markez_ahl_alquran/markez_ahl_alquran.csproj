@@ -97,6 +97,12 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\Program.cs" />
+    <Compile Include="PL\StudentsManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\StudentsManagement.Designer.cs">
+      <DependentUpon>StudentsManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\Teachers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\StudentsManagement.resx">
+      <DependentUpon>StudentsManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\Teachers.resx">
       <DependentUpon>Teachers.cs</DependentUpon>

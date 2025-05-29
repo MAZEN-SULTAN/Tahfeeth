@@ -13,5 +13,6 @@ namespace markez_ahl_alquran.BL
         public int Age { get; set; }
         public DateTime JoinDate { get; set; }
         public int ClassID { get; set; }
+        public string PhoneNumber { get; set; }
     }
 }

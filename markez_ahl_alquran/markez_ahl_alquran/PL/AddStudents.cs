@@ -40,28 +40,43 @@ namespace markez_ahl_alquran.PL
 
         private void bunifuDatePicker1_ValueChanged(object sender, EventArgs e)
         {
+
             DateTime birthDate = Age.Value;
-            int age = DateTime.Today.Year - birthDate.Year;
+            int age = DateTime.Now.Year - birthDate.Year;
+            if (birthDate > DateTime.Now.AddYears(-age))
+                age--;
 
-            if (birthDate > DateTime.Today.AddYears(-age))
-                age--; // تصحيح إذا لم يصل بعد إلى عيد ميلاده هذه السنة
+            lblCalculatedAge.Text = age.ToString();
+            //DateTime birthDate = Age.Value;
+            //int age = DateTime.Today.Year - birthDate.Year;
 
-            MessageBox.Show("العمر هو: " + age + " سنة");
+            //if (birthDate > DateTime.Today.AddYears(-age))
+            //    age--; // تصحيح إذا لم يصل بعد إلى عيد ميلاده هذه السنة
+
+            //MessageBox.Show("العمر هو: " + age + " سنة");
+
+
         }
 
         private void AddStudents_Load(object sender, EventArgs e)
         {
             LoadClasses();
 
-           // CultureInfo culture = new CultureInfo("ar-US"); //  en-USأو "ar-EG" للعربية مع التقويم الميلادي
-           // culture.DateTimeFormat.Calendar = new GregorianCalendar();
+            // ربط الحدث
+            Age.ValueChanged += bunifuDatePicker1_ValueChanged;
+
+            // حساب العمر أول مرة
+            bunifuDatePicker1_ValueChanged(null, null);
+
+            // CultureInfo culture = new CultureInfo("ar-US"); //  en-USأو "ar-EG" للعربية مع التقويم الميلادي
+            // culture.DateTimeFormat.Calendar = new GregorianCalendar();
 
             // تعيين الثقافة بشكل مؤقت للعنصر فقط
-           // System.Threading.Thread.CurrentThread.CurrentCulture = culture;
-           // System.Threading.Thread.CurrentThread.CurrentUICulture = culture;
+            // System.Threading.Thread.CurrentThread.CurrentCulture = culture;
+            // System.Threading.Thread.CurrentThread.CurrentUICulture = culture;
 
             // الآن الـ DateTimePicker سيستخدم الميلادي
-           // Age.Format = DateTimePickerFormat.Short;
+            // Age.Format = DateTimePickerFormat.Short;
 
         }
 
@@ -105,7 +120,14 @@ namespace markez_ahl_alquran.PL
             {
                 // قراءة البيانات من الواجهة
                 string fullName = FullName.Text.Trim();
-                int age = int.Parse(Age.Text);
+                string phoneNumber = StudentPhoneNumber.Text.Trim();
+
+                int age;
+                if (!int.TryParse(lblCalculatedAge.Text, out age))
+                {
+                    MessageBox.Show("❌ لم يتم احتساب العمر بشكل صحيح.");
+                    return;
+                }
                 DateTime joinDate = JoinDate.Value;
                 int classId = ((KeyValuePair<int, string>)CBClassID.SelectedItem).Key;
 
@@ -115,7 +137,8 @@ namespace markez_ahl_alquran.PL
                     FullName = fullName,
                     Age = age,
                     JoinDate = joinDate,
-                    ClassID = classId
+                    ClassID = classId,
+                    PhoneNumber = phoneNumber
                 };
 
                 // حفظ البيانات
@@ -143,6 +166,11 @@ namespace markez_ahl_alquran.PL
         }
 
         private void bunifuLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuLabel6_Click(object sender, EventArgs e)
         {
 
         }

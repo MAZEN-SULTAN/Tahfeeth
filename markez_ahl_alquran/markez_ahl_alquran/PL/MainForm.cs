@@ -21,6 +21,9 @@ namespace markez_ahl_alquran.PL
         {
             AddStudents studentsForm = new AddStudents();
             studentsForm.ShowDialog();
+
+            StudentsManagement form = new StudentsManagement();
+            form.ShowDialog();
         }
 
         private void btnManageClasses_Click(object sender, EventArgs e)
