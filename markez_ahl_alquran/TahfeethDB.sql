@@ -28,7 +28,7 @@ CREATE TABLE Classes (
 CREATE TABLE Students (
     StudentID INT PRIMARY KEY IDENTITY(1,1),     -- رقم تعريف فريد للطالب
     FullName NVARCHAR(100) NOT NULL,             -- اسم الطالب
-    Age INT,                                     -- العمر
+    Age DATE,                                     -- العمر
     JoinDate DATE NOT NULL,                      -- تاريخ الانضمام
 	PhoneNumber NVARCHAR(20) NOT NULL,            --رقم تلفون الطالب 
     ClassID INT NOT NULL,                      -- رقم الحلقة التي ينتمي لها الطالب

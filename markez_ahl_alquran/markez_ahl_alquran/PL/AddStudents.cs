@@ -149,12 +149,14 @@ namespace markez_ahl_alquran.PL
                 string fullName = FullName.Text.Trim();
                 string phoneNumber = StudentPhoneNumber.Text.Trim();
 
-                int age;
-                if (!int.TryParse(lblCalculatedAge.Text, out age))
-                {
-                    MessageBox.Show("❌ لم يتم احتساب العمر بشكل صحيح.");
-                    return;
-                }
+                
+                DateTime birthdate = Age.Value;
+                //int age
+                //if (!int.TryParse(lblCalculatedAge.Text, out age))
+                //{
+                //    MessageBox.Show("❌ لم يتم احتساب العمر بشكل صحيح.");
+                //    return;
+                //}
                 DateTime joinDate = JoinDate.Value;
                 int classId = ((KeyValuePair<int, string>)CBClassID.SelectedItem).Key;
 
@@ -162,7 +164,7 @@ namespace markez_ahl_alquran.PL
                 Students student = new Students
                 {
                     FullName = fullName,
-                    Age = age,
+                    Birthdate = birthdate,
                     JoinDate = joinDate,
                     ClassID = classId,
                     PhoneNumber = phoneNumber
