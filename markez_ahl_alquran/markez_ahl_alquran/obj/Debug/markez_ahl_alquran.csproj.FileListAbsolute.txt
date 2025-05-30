@@ -41,3 +41,5 @@ E:\tarteel\Tahfeeth\markez_ahl_alquran\markez_ahl_alquran\obj\Debug\markez_ahl_a
 E:\tarteel\Tahfeeth\markez_ahl_alquran\markez_ahl_alquran\obj\Debug\markez_ahl_alquran.pdb
 E:\tarteel\Tahfeeth\markez_ahl_alquran\markez_ahl_alquran\obj\Debug\markez_ahl_alquran.PL.Teachers.resources
 E:\tarteel\Tahfeeth\markez_ahl_alquran\markez_ahl_alquran\obj\Debug\markez_ahl_alquran.PL.MainForm.resources
+E:\tarteel\Tahfeeth\markez_ahl_alquran\markez_ahl_alquran\obj\Debug\markez_ahl_alquran.PL.StudentsManagement.resources
+E:\tarteel\Tahfeeth\markez_ahl_alquran\markez_ahl_alquran\bin\Debug\Guna.UI2.dll

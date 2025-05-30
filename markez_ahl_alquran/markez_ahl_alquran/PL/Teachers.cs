@@ -53,14 +53,21 @@ namespace markez_ahl_alquran.PL
                 MessageBox.Show("الرجاء إدخال راتب صالح");
                 return;
             }
+            string phonenumber = TeacherName.Text;
+            if (!decimal.TryParse(TeacherPhoneNumber.Text, out decimal Phonenumber))
+            {
+                MessageBox.Show("الرجاء إدخال راتب صالح");
+                return;
+            }
 
             try
             {
-                teacherBL.AddTeacher(name, salary);
+                teacherBL.AddTeacher(name, salary, Phonenumber);
                 MessageBox.Show("تمت الإضافة بنجاح");
                 LoadTeachers();
                 TeacherName.Clear();
                 Salary.Clear();
+                TeacherPhoneNumber.Clear();
             }
             catch (Exception ex)
             {

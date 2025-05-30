@@ -19,11 +19,13 @@ namespace markez_ahl_alquran.PL
 
         private void btnManageStudents_Click(object sender, EventArgs e)
         {
-            AddStudents studentsForm = new AddStudents();
-            studentsForm.ShowDialog();
+            //AddStudents studentsForm = new AddStudents();
+            //studentsForm.ShowDialog();
 
-            StudentsManagement form = new StudentsManagement();
-            form.ShowDialog();
+            //StudentsManagement form = new StudentsManagement();
+            //form.ShowDialog();
+            StudentsManagement studentsForm = new StudentsManagement();
+            studentsForm.ShowDialog(); // عرض الواجهة بشكل منبثق
         }
 
         private void btnManageClasses_Click(object sender, EventArgs e)

@@ -26,14 +26,15 @@ namespace markez_ahl_alquran.DAL
         }
 
         // إضافة معلم جديد
-        public void AddTeacher(string fullName, decimal salary)
+        public void AddTeacher(string fullName, decimal salary, decimal phonenumber)
         {
             using (SqlConnection conn = dbHelper.GetConnection())
             {
-                string query = "INSERT INTO Teachers (FullName, Salary) VALUES (@FullName, @Salary)";
+                string query = "INSERT INTO Teachers (FullName, Salary, PhoneNumber) VALUES (@FullName, @Salary, @PhoneNumber)";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@FullName", fullName);
                 cmd.Parameters.AddWithValue("@Salary", salary);
+                cmd.Parameters.AddWithValue("@PhoneNumber", phonenumber);
                 conn.Open();
                 cmd.ExecuteNonQuery();
             }

@@ -18,9 +18,36 @@ namespace markez_ahl_alquran.PL
 {
     public partial class AddStudents : Form
     {
+        private int? editingStudentId = null;
+        // Constructor للإضافة فقط
         public AddStudents()
         {
             InitializeComponent();
+        }
+
+        // Constructor للتعديل
+        public AddStudents(int studentId)
+        {
+            InitializeComponent();
+            editingStudentId = studentId;
+            LoadStudentData(studentId); // تحميل بيانات الطالب
+        }
+
+        private void LoadStudentData(int studentId)
+        {
+            StudentsDAL dal = new StudentsDAL();
+            DataTable dt = dal.GetStudentById(studentId);
+
+            if (dt.Rows.Count > 0)
+            {
+                DataRow row = dt.Rows[0];
+                FullName.Text = row["FullName"].ToString();
+                Age.Value = Convert.ToDateTime(row["Age"]);
+
+                JoinDate.Value = Convert.ToDateTime(row["JoinDate"]);
+                PhoneNumber.Text = row["PhoneNumber"].ToString();
+                CBClassID.SelectedValue = row["ClassID"];
+            }
         }
 
         private void bunifuGroupBox1_Enter(object sender, EventArgs e)
@@ -143,7 +170,16 @@ namespace markez_ahl_alquran.PL
 
                 // حفظ البيانات
                 StudentsDAL dal = new StudentsDAL();
-                bool success = dal.InsertStudent(student);
+                bool success;
+
+                if (editingStudentId == null)
+                {
+                    success = dal.InsertStudent(student);
+                }
+                else
+                {
+                    success = dal.UpdateStudent((int)editingStudentId, student); // ستنشئها لاحقًا
+                }
 
                 if (success)
                 {

@@ -18,9 +18,9 @@ namespace markez_ahl_alquran.BL
             return dal.GetAllTeachers();
         }
 
-        public void AddTeacher(string fullName, decimal salary)
+        public void AddTeacher(string fullName, decimal salary, decimal phonenumber)
         {
-            dal.AddTeacher(fullName, salary);
+            dal.AddTeacher(fullName, salary, phonenumber);
         }
 
         public void DeleteTeacher(int teacherID)
