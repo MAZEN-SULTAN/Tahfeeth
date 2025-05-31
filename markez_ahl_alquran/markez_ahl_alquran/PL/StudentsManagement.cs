@@ -46,7 +46,7 @@ namespace markez_ahl_alquran.PL
                 dataGridViewStudents.Columns.Add("ClassName", "اسم الحلقة");
 
                 // تعبئة الصفوف بالبيانات من DataTable
-                int rowNumber = 1;
+               // int rowNumber = 1;
 
                 foreach (DataRow row in dt.Rows)
                 {
@@ -57,7 +57,7 @@ namespace markez_ahl_alquran.PL
 
                     // إضافة صف جديد للطالب
                     dataGridViewStudents.Rows.Add(
-                        rowNumber++, // الرقم التسلسلي
+                     //   rowNumber++, // الرقم التسلسلي
                         row["StudentID"],
                         row["FullName"],
                         birthDate.ToShortDateString(), // عرض تاريخ الميلاد كـ نص
