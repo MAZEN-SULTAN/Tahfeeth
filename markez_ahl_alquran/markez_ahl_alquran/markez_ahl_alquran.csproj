@@ -79,6 +79,7 @@
     <Compile Include="BL\TeacherBL.cs" />
     <Compile Include="DAL\ClassDAL.cs" />
     <Compile Include="DAL\DatabaseHelper.cs" />
+    <Compile Include="DAL\MonthlyReportDAL.cs" />
     <Compile Include="DAL\StudentsDAL.cs" />
     <Compile Include="DAL\TeacherDAL.cs" />
     <Compile Include="PL\AddStudents.cs">
