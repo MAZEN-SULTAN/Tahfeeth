@@ -40,7 +40,7 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.FullName = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.AddStudent = new Bunifu.UI.WinForms.BunifuLabel();
             this.btnCancel = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnSave = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.CBClassID = new System.Windows.Forms.ComboBox();
@@ -51,9 +51,9 @@
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuGroupBox1 = new Bunifu.UI.WinForms.BunifuGroupBox();
-            this.lblCalculatedAge = new Bunifu.UI.WinForms.BunifuLabel();
-            this.StudentPhoneNumber = new Bunifu.UI.WinForms.BunifuTextBox();
             this.PhoneNumber = new Bunifu.UI.WinForms.BunifuLabel();
+            this.StudentPhoneNumber = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.lblCalculatedAge = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuGroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -131,23 +131,23 @@
             this.FullName.UseSystemPasswordChar = false;
             this.FullName.WordWrap = true;
             // 
-            // bunifuLabel1
+            // AddStudent
             // 
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel1.Location = new System.Drawing.Point(401, 0);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bunifuLabel1.Size = new System.Drawing.Size(167, 35);
-            this.bunifuLabel1.TabIndex = 3;
-            this.bunifuLabel1.Text = "إضافة طالب جديد";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            this.bunifuLabel1.Click += new System.EventHandler(this.bunifuLabel1_Click);
+            this.AddStudent.AllowParentOverrides = false;
+            this.AddStudent.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.AddStudent.AutoEllipsis = false;
+            this.AddStudent.Cursor = System.Windows.Forms.Cursors.Default;
+            this.AddStudent.CursorType = System.Windows.Forms.Cursors.Default;
+            this.AddStudent.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddStudent.Location = new System.Drawing.Point(401, 0);
+            this.AddStudent.Name = "AddStudent";
+            this.AddStudent.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.AddStudent.Size = new System.Drawing.Size(167, 35);
+            this.AddStudent.TabIndex = 3;
+            this.AddStudent.Text = "إضافة طالب جديد";
+            this.AddStudent.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
+            this.AddStudent.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.AddStudent.Click += new System.EventHandler(this.bunifuLabel1_Click);
             // 
             // btnCancel
             // 
@@ -237,6 +237,7 @@
             this.btnCancel.TextMarginLeft = 0;
             this.btnCancel.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnCancel.UseDefaultRadiusAndThickness = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSave
             // 
@@ -474,7 +475,7 @@
             this.bunifuGroupBox1.Controls.Add(this.bunifuLabel2);
             this.bunifuGroupBox1.Controls.Add(this.bunifuLabel5);
             this.bunifuGroupBox1.Controls.Add(this.CBClassID);
-            this.bunifuGroupBox1.Controls.Add(this.bunifuLabel1);
+            this.bunifuGroupBox1.Controls.Add(this.AddStudent);
             this.bunifuGroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bunifuGroupBox1.LabelAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bunifuGroupBox1.LabelIndent = 10;
@@ -485,21 +486,21 @@
             this.bunifuGroupBox1.TabIndex = 14;
             this.bunifuGroupBox1.TabStop = false;
             // 
-            // lblCalculatedAge
+            // PhoneNumber
             // 
-            this.lblCalculatedAge.AllowParentOverrides = false;
-            this.lblCalculatedAge.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCalculatedAge.AutoEllipsis = false;
-            this.lblCalculatedAge.CursorType = null;
-            this.lblCalculatedAge.Font = new System.Drawing.Font("Arial", 12F);
-            this.lblCalculatedAge.Location = new System.Drawing.Point(310, 188);
-            this.lblCalculatedAge.Name = "lblCalculatedAge";
-            this.lblCalculatedAge.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblCalculatedAge.Size = new System.Drawing.Size(46, 23);
-            this.lblCalculatedAge.TabIndex = 13;
-            this.lblCalculatedAge.Text = "العمر :";
-            this.lblCalculatedAge.TextAlignment = System.Drawing.ContentAlignment.TopRight;
-            this.lblCalculatedAge.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.PhoneNumber.AllowParentOverrides = false;
+            this.PhoneNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.PhoneNumber.AutoEllipsis = false;
+            this.PhoneNumber.CursorType = null;
+            this.PhoneNumber.Font = new System.Drawing.Font("Arial", 12F);
+            this.PhoneNumber.Location = new System.Drawing.Point(688, 282);
+            this.PhoneNumber.Name = "PhoneNumber";
+            this.PhoneNumber.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.PhoneNumber.Size = new System.Drawing.Size(82, 23);
+            this.PhoneNumber.TabIndex = 15;
+            this.PhoneNumber.Text = "رقم الهاتف :";
+            this.PhoneNumber.TextAlignment = System.Drawing.ContentAlignment.TopRight;
+            this.PhoneNumber.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // StudentPhoneNumber
             // 
@@ -575,21 +576,21 @@
             this.StudentPhoneNumber.UseSystemPasswordChar = false;
             this.StudentPhoneNumber.WordWrap = true;
             // 
-            // PhoneNumber
+            // lblCalculatedAge
             // 
-            this.PhoneNumber.AllowParentOverrides = false;
-            this.PhoneNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.PhoneNumber.AutoEllipsis = false;
-            this.PhoneNumber.CursorType = null;
-            this.PhoneNumber.Font = new System.Drawing.Font("Arial", 12F);
-            this.PhoneNumber.Location = new System.Drawing.Point(688, 282);
-            this.PhoneNumber.Name = "PhoneNumber";
-            this.PhoneNumber.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.PhoneNumber.Size = new System.Drawing.Size(82, 23);
-            this.PhoneNumber.TabIndex = 15;
-            this.PhoneNumber.Text = "رقم الهاتف :";
-            this.PhoneNumber.TextAlignment = System.Drawing.ContentAlignment.TopRight;
-            this.PhoneNumber.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lblCalculatedAge.AllowParentOverrides = false;
+            this.lblCalculatedAge.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCalculatedAge.AutoEllipsis = false;
+            this.lblCalculatedAge.CursorType = null;
+            this.lblCalculatedAge.Font = new System.Drawing.Font("Arial", 12F);
+            this.lblCalculatedAge.Location = new System.Drawing.Point(310, 188);
+            this.lblCalculatedAge.Name = "lblCalculatedAge";
+            this.lblCalculatedAge.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblCalculatedAge.Size = new System.Drawing.Size(46, 23);
+            this.lblCalculatedAge.TabIndex = 13;
+            this.lblCalculatedAge.Text = "العمر :";
+            this.lblCalculatedAge.TextAlignment = System.Drawing.ContentAlignment.TopRight;
+            this.lblCalculatedAge.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // AddStudents
             // 
@@ -611,7 +612,7 @@
         #endregion
 
         private Bunifu.UI.WinForms.BunifuTextBox FullName;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
+        private Bunifu.UI.WinForms.BunifuLabel AddStudent;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private Bunifu.UI.WinForms.BunifuDatePicker Age;

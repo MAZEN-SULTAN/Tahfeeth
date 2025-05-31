@@ -33,12 +33,39 @@ namespace markez_ahl_alquran.PL
             {
                 dataGridViewStudents.DataSource = null;
                 dataGridViewStudents.Columns.Clear(); // إزالة الأعمدة القديمة مثل زر الحذف أو التعديل
-                dataGridViewStudents.DataSource = dt;
+                                                      //dataGridViewStudents.DataSource = dt;
 
-                // إخفاء عمود StudentID إذا أردت
-                if (dataGridViewStudents.Columns.Contains("StudentID"))
+                dataGridViewStudents.Columns.Add("StudentID", "رقم الطالب");
+                dataGridViewStudents.Columns["StudentID"].Visible = false;
+                dataGridViewStudents.Columns.Add("RowNumber", "رقم الطالب");
+                dataGridViewStudents.Columns.Add("FullName", "اسم الطالب");
+                dataGridViewStudents.Columns.Add("BirthDate", "تاريخ الميلاد");
+                dataGridViewStudents.Columns.Add("Age", "العمر"); // سيتم حسابه
+                dataGridViewStudents.Columns.Add("JoinDate", "تاريخ الانضمام");
+                dataGridViewStudents.Columns.Add("PhoneNumber", "رقم الهاتف");
+                dataGridViewStudents.Columns.Add("ClassName", "اسم الحلقة");
+
+                // تعبئة الصفوف بالبيانات من DataTable
+                int rowNumber = 1;
+
+                foreach (DataRow row in dt.Rows)
                 {
-                    dataGridViewStudents.Columns["StudentID"].Visible = false;
+                    // حساب العمر بناءً على تاريخ الميلاد
+                    DateTime birthDate = Convert.ToDateTime(row["BirthDate"]);
+                    int age = DateTime.Now.Year - birthDate.Year;
+                    if (DateTime.Now < birthDate.AddYears(age)) age--; // تصحيح العمر إن لم يصل عيد ميلاده هذه السنة
+
+                    // إضافة صف جديد للطالب
+                    dataGridViewStudents.Rows.Add(
+                        rowNumber++, // الرقم التسلسلي
+                        row["StudentID"],
+                        row["FullName"],
+                        birthDate.ToShortDateString(), // عرض تاريخ الميلاد كـ نص
+                        age, // العمر المحسوب
+                        Convert.ToDateTime(row["JoinDate"]).ToShortDateString(),
+                        row["PhoneNumber"],
+                        row["ClassName"]
+                    );
                 }
 
                 // إضافة عمود زر "تعديل" إن لم يكن موجود
@@ -62,6 +89,9 @@ namespace markez_ahl_alquran.PL
                     deleteColumn.UseColumnTextForButtonValue = true;
                     dataGridViewStudents.Columns.Add(deleteColumn);
                 }
+
+                // تحسين عرض الجدول (اختياري)
+                dataGridViewStudents.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             }
         }
 
@@ -83,19 +113,19 @@ namespace markez_ahl_alquran.PL
 
         private void dataGridViewStudents_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            dataGridViewStudents.CellClick += dataGridViewStudents_CellClick;
+            
             if (e.RowIndex >= 0)
             {
                 // عمود التعديل
                 if (dataGridViewStudents.Columns[e.ColumnIndex].Name == "EditColumn")
                 {
                     int studentId = Convert.ToInt32(dataGridViewStudents.Rows[e.RowIndex].Cells["StudentID"].Value);
-                    // فتح نموذج التعديل
-                    AddStudents editForm = new AddStudents(studentId); // تمرير ID الطالب
-                    if (editForm.ShowDialog() == DialogResult.OK)
+                //    // فتح نموذج التعديل
+                AddStudents editForm = new AddStudents(studentId); // تمرير ID الطالب
+                if (editForm.ShowDialog() == DialogResult.OK)
                     {
                         LoadStudents(); // إعادة تحميل البيانات بعد التعديل
-                    }
+            }
                 }
 
                 // عمود الحذف

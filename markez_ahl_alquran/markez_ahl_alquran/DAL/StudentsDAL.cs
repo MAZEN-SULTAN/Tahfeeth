@@ -20,12 +20,12 @@ namespace markez_ahl_alquran.DAL
             {
                 using (SqlConnection conn = db.GetConnection())
                 {
-                    string query = "INSERT INTO Students (FullName, Age, JoinDate, ClassID, PhoneNumber) VALUES (@FullName, @Age, @JoinDate, @ClassID, @PhoneNumber)";
+                    string query = "INSERT INTO Students (FullName, BirthDate, JoinDate, ClassID, PhoneNumber) VALUES (@FullName, @BirthDate, @JoinDate, @ClassID, @PhoneNumber)";
                     SqlCommand cmd = new SqlCommand(query, conn);
 
                     // إضافة القيم
                     cmd.Parameters.AddWithValue("@FullName", student.FullName);
-                    cmd.Parameters.AddWithValue("@Age", student.Age);
+                    cmd.Parameters.AddWithValue("@BirthDate", student.BirthDate);
                     cmd.Parameters.AddWithValue("@JoinDate", student.JoinDate);
                     cmd.Parameters.AddWithValue("@ClassID", student.ClassID);
                     cmd.Parameters.AddWithValue("@PhoneNumber", student.PhoneNumber);
@@ -48,7 +48,7 @@ namespace markez_ahl_alquran.DAL
             {
                 using (SqlConnection conn = db.GetConnection())
                 {
-                    string query = @"SELECT S.StudentID, S.FullName, S.Age, S.JoinDate, 
+                    string query = @"SELECT S.StudentID, S.FullName, S.BirthDate, S.JoinDate, 
                              S.PhoneNumber, C.ClassName 
                              FROM Students S
                              LEFT JOIN Classes C ON S.ClassID = C.ClassID";
@@ -103,7 +103,7 @@ namespace markez_ahl_alquran.DAL
                 {
                     string query = @"UPDATE Students 
                              SET FullName = @FullName,
-                                 Age = @Age,
+                                 BirthDate = @BirthDate,
                                  JoinDate = @JoinDate,
                                  ClassID = @ClassID,
                                  PhoneNumber = @PhoneNumber
@@ -111,7 +111,7 @@ namespace markez_ahl_alquran.DAL
 
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@FullName", student.FullName);
-                    cmd.Parameters.AddWithValue("@Age", student.Age);
+                    cmd.Parameters.AddWithValue("@BirthDate", student.BirthDate);
                     cmd.Parameters.AddWithValue("@JoinDate", student.JoinDate);
                     cmd.Parameters.AddWithValue("@ClassID", student.ClassID);
                     cmd.Parameters.AddWithValue("@PhoneNumber", student.PhoneNumber);

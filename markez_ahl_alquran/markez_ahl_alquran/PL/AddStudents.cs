@@ -30,7 +30,8 @@ namespace markez_ahl_alquran.PL
         {
             InitializeComponent();
             editingStudentId = studentId;
-            LoadStudentData(studentId); // تحميل بيانات الطالب
+            AddStudent.Text = "التعديل على بيانات الطالب"; // ← تغيير عنوان الـ Label
+            LoadStudentData(studentId);
         }
 
         private void LoadStudentData(int studentId)
@@ -42,7 +43,7 @@ namespace markez_ahl_alquran.PL
             {
                 DataRow row = dt.Rows[0];
                 FullName.Text = row["FullName"].ToString();
-                Age.Value = Convert.ToDateTime(row["Age"]);
+                Age.Value = Convert.ToDateTime(row["BirthDate"]);
 
                 JoinDate.Value = Convert.ToDateTime(row["JoinDate"]);
                 PhoneNumber.Text = row["PhoneNumber"].ToString();
@@ -149,12 +150,11 @@ namespace markez_ahl_alquran.PL
                 string fullName = FullName.Text.Trim();
                 string phoneNumber = StudentPhoneNumber.Text.Trim();
 
-                int age;
-                if (!int.TryParse(lblCalculatedAge.Text, out age))
-                {
-                    MessageBox.Show("❌ لم يتم احتساب العمر بشكل صحيح.");
-                    return;
-                }
+                
+
+                DateTime birthDate = Age.Value; // DateTimePicker الذي يحمل تاريخ الميلاد
+
+                
                 DateTime joinDate = JoinDate.Value;
                 int classId = ((KeyValuePair<int, string>)CBClassID.SelectedItem).Key;
 
@@ -162,7 +162,7 @@ namespace markez_ahl_alquran.PL
                 Students student = new Students
                 {
                     FullName = fullName,
-                    Age = age,
+                    BirthDate = birthDate,
                     JoinDate = joinDate,
                     ClassID = classId,
                     PhoneNumber = phoneNumber
@@ -184,8 +184,14 @@ namespace markez_ahl_alquran.PL
                 if (success)
                 {
                     MessageBox.Show("✅ تم حفظ بيانات الطالب بنجاح.");
-                    ClearForm();
+
+                    // تحديد نتيجة النموذج كـ "OK" حتى يفهم MainForm أن هناك تعديلًا حدث
+                    this.DialogResult = DialogResult.OK;
+
+                    // إغلاق النموذج
+                    this.Close();
                 }
+
             }
             catch (Exception ex)
             {
@@ -208,6 +214,13 @@ namespace markez_ahl_alquran.PL
 
         private void bunifuLabel6_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
+            this.Close();
 
         }
     }
