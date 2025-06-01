@@ -76,3 +76,14 @@ CREATE TABLE ClassFunds (
     Balance AS (TotalIncome - TotalExpenses),    -- الرصيد (محسوب تلقائياً)
     CONSTRAINT FK_Funds_Class FOREIGN KEY (ClassID) REFERENCES Classes(ClassID) -- علاقة بالحلقات
 );
+
+CREATE TABLE MonthlyReport (
+    ReportID INT IDENTITY(1,1) PRIMARY KEY,
+    StudentID INT NOT NULL,
+    Month INT NOT NULL,           -- 1 = يناير، 2 = فبراير، إلخ
+    Year INT NOT NULL,
+    DaysPresent INT NOT NULL,     -- عدد أيام الحضور
+    DaysAbsent INT NOT NULL,      -- عدد أيام الغياب
+    Notes NVARCHAR(255),          -- ملاحظات إضافية (اختياري)
+    CONSTRAINT FK_Student_MonthlyReport FOREIGN KEY (StudentID) REFERENCES Students(StudentID)
+);

@@ -50,5 +50,11 @@ namespace markez_ahl_alquran.PL
             FilterProgressForm filterProgress = new FilterProgressForm();
             filterProgress.ShowDialog(); // عرض الواجهة بشكل منبثق
         }
+
+        private void btnStudentManagment(object sender, EventArgs e)
+        {
+            MonthlyReport AbsentManagment = new MonthlyReport();
+            AbsentManagment.ShowDialog();
+        }
     }
 }

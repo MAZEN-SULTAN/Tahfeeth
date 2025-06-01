@@ -69,17 +69,17 @@ namespace markez_ahl_alquran.PL
             colName.Name = "FullName";
             colName.HeaderText = "اسم الطالب";
             colName.DataPropertyName = "FullName";
-            colName.Width = 200;
+            colName.Width = 230;
             colName.ReadOnly = true;
             dataGridViewProgress.Columns.Add(colName);
 
             // من آية ... إلى آية
-            dataGridViewProgress.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "من الحفظ", Name = "MemorizedFrom", Width = 100 });
-            dataGridViewProgress.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "إلى ", Name = "MemorizedTo", Width = 100 });
+            dataGridViewProgress.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "من الحفظ", Name = "MemorizedFrom", Width = 230 });
+            dataGridViewProgress.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "إلى ", Name = "MemorizedTo", Width = 230 });
 
             // مراجعة من ... إلى
-            dataGridViewProgress.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "مراجعة من", Name = "ReviewedFrom", Width = 100 });
-            dataGridViewProgress.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "إلى", Name = "ReviewedTo", Width = 100 });
+            dataGridViewProgress.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "مراجعة من", Name = "ReviewedFrom", Width = 230 });
+            dataGridViewProgress.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "إلى", Name = "ReviewedTo", Width = 230 });
         }
 
 
@@ -147,6 +147,11 @@ namespace markez_ahl_alquran.PL
         {
             this.DialogResult = DialogResult.Cancel;
             this.Close();
+        }
+
+        private void dataGridViewProgress_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

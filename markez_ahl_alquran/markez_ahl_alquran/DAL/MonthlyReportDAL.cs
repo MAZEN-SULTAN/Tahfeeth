@@ -10,8 +10,8 @@ namespace markez_ahl_alquran.DAL
 
         public MonthlyReportDAL()
         {
-            DatabaseHelper db = new DatabaseHelper();
-            //connection = new SqlConnection(@"Data Source=MAZEN-SULTAN;Initial Catalog=YourDatabaseName;Integrated Security=True");
+            //DatabaseHelper db = new DatabaseHelper();
+            connection = new SqlConnection(@"Data Source=MAZEN-SULTAN;Initial Catalog=TahfeethDB;Integrated Security=True");
         }
 
         public bool AddMonthlyReport(int studentId, int month, int year, int daysPresent, int daysAbsent, string notes)

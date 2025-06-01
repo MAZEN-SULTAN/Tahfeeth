@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu.Licensing, Version=3.2.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b" />
     <Reference Include="Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.UI.WinForms.1.5.3.2.0.0\lib\net452\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
     </Reference>
@@ -41,6 +42,9 @@
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
       <HintPath>..\..\BunifuCrack-main\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>..\..\BunifuCrack-main\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuGroupBox">
       <HintPath>..\..\BunifuCrack-main\Bunifu.UI.WinForms.BunifuGroupBox.dll</HintPath>
@@ -107,6 +111,12 @@
     <Compile Include="PL\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\MonthlyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\MonthlyReport.Designer.cs">
+      <DependentUpon>MonthlyReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\Program.cs" />
     <Compile Include="PL\StudentProgressEntry.cs">
       <SubType>Form</SubType>
@@ -138,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\MonthlyReport.resx">
+      <DependentUpon>MonthlyReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\StudentProgressEntry.resx">
       <DependentUpon>StudentProgressEntry.cs</DependentUpon>

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentProgressEntry));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.lblTitle = new Bunifu.UI.WinForms.BunifuLabel();
             this.dataGridViewProgress = new System.Windows.Forms.DataGridView();
             this.btnSave = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -44,6 +44,7 @@
             // 
             this.lblTitle.AllowParentOverrides = false;
             this.lblTitle.AutoEllipsis = false;
+            this.lblTitle.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblTitle.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblTitle.Location = new System.Drawing.Point(662, 3);
@@ -65,6 +66,7 @@
             this.dataGridViewProgress.RowTemplate.Height = 26;
             this.dataGridViewProgress.Size = new System.Drawing.Size(1409, 661);
             this.dataGridViewProgress.TabIndex = 1;
+            this.dataGridViewProgress.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProgress_CellContentClick);
             // 
             // btnSave
             // 
@@ -85,11 +87,11 @@
             this.btnSave.ColorContrastOnClick = 45;
             this.btnSave.ColorContrastOnHover = 45;
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnSave.CustomizableEdges = borderEdges3;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnSave.CustomizableEdges = borderEdges1;
             this.btnSave.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSave.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSave.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -194,11 +196,11 @@
             this.btnCancel.ColorContrastOnClick = 45;
             this.btnCancel.ColorContrastOnHover = 45;
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btnCancel.CustomizableEdges = borderEdges4;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnCancel.CustomizableEdges = borderEdges2;
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnCancel.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnCancel.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
