@@ -65,5 +65,26 @@ namespace markez_ahl_alquran.DAL
                 return dt;
             }
         }
+
+        public string GetClassNameById(int classId)
+        {
+            string className = "";
+
+            using (SqlConnection conn = dbHelper.GetConnection())
+            {
+                string query = "SELECT ClassName FROM Classes WHERE ClassID = @id";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@id", classId);
+
+                conn.Open();
+                object result = cmd.ExecuteScalar();
+                if (result != null)
+                    className = result.ToString();
+            }
+
+            return className;
+        }
+
+
     }
 }

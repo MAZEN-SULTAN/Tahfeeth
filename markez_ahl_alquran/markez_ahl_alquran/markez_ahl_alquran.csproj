@@ -80,6 +80,7 @@
     <Compile Include="DAL\ClassDAL.cs" />
     <Compile Include="DAL\DatabaseHelper.cs" />
     <Compile Include="DAL\MonthlyReportDAL.cs" />
+    <Compile Include="DAL\StudentProgressDAL.cs" />
     <Compile Include="DAL\StudentsDAL.cs" />
     <Compile Include="DAL\TeacherDAL.cs" />
     <Compile Include="PL\AddStudents.cs">
@@ -94,6 +95,12 @@
     <Compile Include="PL\Classes.Designer.cs">
       <DependentUpon>Classes.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\FilterProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FilterProgressForm.Designer.cs">
+      <DependentUpon>FilterProgressForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +108,12 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\Program.cs" />
+    <Compile Include="PL\StudentProgressEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\StudentProgressEntry.Designer.cs">
+      <DependentUpon>StudentProgressEntry.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\StudentsManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,8 +133,14 @@
     <EmbeddedResource Include="PL\Classes.resx">
       <DependentUpon>Classes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\FilterProgressForm.resx">
+      <DependentUpon>FilterProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\StudentProgressEntry.resx">
+      <DependentUpon>StudentProgressEntry.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\StudentsManagement.resx">
       <DependentUpon>StudentsManagement.cs</DependentUpon>

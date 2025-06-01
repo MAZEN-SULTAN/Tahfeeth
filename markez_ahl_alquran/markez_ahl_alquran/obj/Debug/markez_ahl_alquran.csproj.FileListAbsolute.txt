@@ -69,3 +69,5 @@ C:\Users\hp\source\repos\markez_ahl_alquran\markez_ahl_alquran\obj\Debug\markez_
 C:\Users\hp\source\repos\markez_ahl_alquran\markez_ahl_alquran\obj\Debug\markez_a.D2EE1162.Up2Date
 C:\Users\hp\source\repos\markez_ahl_alquran\markez_ahl_alquran\obj\Debug\markez_ahl_alquran.exe
 C:\Users\hp\source\repos\markez_ahl_alquran\markez_ahl_alquran\obj\Debug\markez_ahl_alquran.pdb
+E:\tarteel\Tahfeeth\markez_ahl_alquran\markez_ahl_alquran\obj\Debug\markez_ahl_alquran.PL.FilterProgressForm.resources
+E:\tarteel\Tahfeeth\markez_ahl_alquran\markez_ahl_alquran\obj\Debug\markez_ahl_alquran.PL.StudentProgressEntry.resources

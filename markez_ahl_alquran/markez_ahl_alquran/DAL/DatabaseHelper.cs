@@ -10,7 +10,7 @@ namespace markez_ahl_alquran.DAL
     public class DatabaseHelper
     {
         // سلسلة الاتصال بقاعدة البيانات
-        private string connectionString = "Data Source=MAZEN-SULTAN;Initial Catalog=TahfeethDB;Integrated Security=True;";
+        private string connectionString = "Data Source=AIMAN-ALSHUJAA;Initial Catalog=TahfeethDB;Integrated Security=True;";
 
         // دالة لإرجاع اتصال جديد
         public SqlConnection GetConnection()

@@ -44,5 +44,11 @@ namespace markez_ahl_alquran.PL
         {
 
         }
+
+        private void btnStudentProgressEntry_Click(object sender, EventArgs e)
+        {
+            FilterProgressForm filterProgress = new FilterProgressForm();
+            filterProgress.ShowDialog(); // عرض الواجهة بشكل منبثق
+        }
     }
 }

@@ -130,6 +130,24 @@ namespace markez_ahl_alquran.DAL
         }
 
 
+        public DataTable GetStudentsByClass(int classId)
+        {
+            DataTable dt = new DataTable();
+
+            using (SqlConnection conn = db.GetConnection())
+            {
+                string query = "SELECT StudentID, FullName FROM Students WHERE ClassID = @classId";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@classId", classId);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+            }
+
+            return dt;
+        }
+
+
+
 
 
     }
