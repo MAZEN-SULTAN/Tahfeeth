@@ -49,7 +49,7 @@
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lblTitle.Location = new System.Drawing.Point(662, 3);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTitle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblTitle.Size = new System.Drawing.Size(86, 20);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "bunifuLabel1";
