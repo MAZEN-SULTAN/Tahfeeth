@@ -27,7 +27,6 @@ E:\tarteel\Tahfeeth\markez_ahl_alquran\markez_ahl_alquran\bin\Debug\Bunifu.UI.Wi
 E:\tarteel\Tahfeeth\markez_ahl_alquran\markez_ahl_alquran\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
 E:\tarteel\Tahfeeth\markez_ahl_alquran\markez_ahl_alquran\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
 E:\tarteel\Tahfeeth\markez_ahl_alquran\markez_ahl_alquran\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
-E:\tarteel\Tahfeeth\markez_ahl_alquran\markez_ahl_alquran\bin\Debug\Bunifu.Licensing.dll
 E:\tarteel\Tahfeeth\markez_ahl_alquran\markez_ahl_alquran\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
 E:\tarteel\Tahfeeth\markez_ahl_alquran\markez_ahl_alquran\obj\Debug\markez_ahl_alquran.csproj.AssemblyReference.cache
 E:\tarteel\Tahfeeth\markez_ahl_alquran\markez_ahl_alquran\obj\Debug\markez_ahl_alquran.PL.AddStudents.resources
@@ -74,3 +73,5 @@ C:\Users\hp\source\repos\markez_ahl_alquran\markez_ahl_alquran\obj\Debug\markez_
 C:\Users\hp\source\repos\markez_ahl_alquran\markez_ahl_alquran\obj\Debug\markez_ahl_alquran.PL.StudentProgressEntry.resources
 C:\Users\hp\source\repos\markez_ahl_alquran\markez_ahl_alquran\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
 C:\Users\hp\source\repos\markez_ahl_alquran\markez_ahl_alquran\obj\Debug\markez_ahl_alquran.PL.MonthlyReport.resources
+E:\tarteel\Tahfeeth\markez_ahl_alquran\markez_ahl_alquran\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+E:\tarteel\Tahfeeth\markez_ahl_alquran\markez_ahl_alquran\obj\Debug\markez_ahl_alquran.PL.MonthlyReport.resources
