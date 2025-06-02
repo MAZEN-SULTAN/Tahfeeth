@@ -38,14 +38,25 @@ namespace markez_ahl_alquran.PL
             DropDownYear.Value = currentYear;
         }
 
+        /* private void LoadMonths()
+         {
+             comboBoxMonth.Items.AddRange(
+                 System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.MonthNames
+             );
+
+             comboBoxMonth.SelectedIndex = DateTime.Now.Month - 1;
+         }*/
+        // داله تظهر الاشهر الميلادية في الفورم
         private void LoadMonths()
         {
-            comboBoxMonth.Items.AddRange(
-                System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.MonthNames
-            );
+            var gregorianCulture = new System.Globalization.CultureInfo("en-US");
+            comboBoxMonth.Items.AddRange(gregorianCulture.DateTimeFormat.MonthNames
+                .Where(month => !string.IsNullOrEmpty(month))
+                .ToArray());
 
             comboBoxMonth.SelectedIndex = DateTime.Now.Month - 1;
         }
+
 
         private void btnNext_Click(object sender, EventArgs e)
         {
@@ -81,6 +92,11 @@ namespace markez_ahl_alquran.PL
         }
 
         private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxMonth_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

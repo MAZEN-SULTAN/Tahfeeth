@@ -69,18 +69,20 @@ namespace markez_ahl_alquran.PL
             colName.Name = "FullName";
             colName.HeaderText = "اسم الطالب";
             colName.DataPropertyName = "FullName";
-            colName.Width = 230;
+            colName.Width = 180;
             colName.ReadOnly = true;
             dataGridViewProgress.Columns.Add(colName);
 
             // من آية ... إلى آية
-            dataGridViewProgress.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "من الحفظ", Name = "MemorizedFrom", Width = 230 });
-            dataGridViewProgress.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "إلى ", Name = "MemorizedTo", Width = 230 });
+            dataGridViewProgress.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "من الحفظ", Name = "MemorizedFrom", Width = 180 });
+            dataGridViewProgress.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "إلى ", Name = "MemorizedTo", Width = 180 });
+            dataGridViewProgress.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "التقييم ", Name = "MemorizedEvaluation", Width = 120 });
 
             // مراجعة من ... إلى
-            dataGridViewProgress.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "مراجعة من", Name = "ReviewedFrom", Width = 230 });
-            dataGridViewProgress.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "إلى", Name = "ReviewedTo", Width = 230 });
-        }
+            dataGridViewProgress.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "مراجعة من", Name = "ReviewedFrom", Width = 180 });
+            dataGridViewProgress.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "إلى", Name = "ReviewedTo", Width = 180 });
+            dataGridViewProgress.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "التقييم ", Name = "ReviewedEvaluation", Width = 120 });
+        }   
 
 
 
@@ -133,10 +135,12 @@ namespace markez_ahl_alquran.PL
                 int studentId = Convert.ToInt32(row.Cells["StudentID"].Value);
                 string memorizedFrom = row.Cells["MemorizedFrom"].Value?.ToString();
                 string memorizedTo = row.Cells["MemorizedTo"].Value?.ToString();
+                string memorizedEvaluation = row.Cells["MemorizedEvaluation"].Value?.ToString();
                 string reviewedFrom = row.Cells["ReviewedFrom"].Value?.ToString();
                 string reviewedTo = row.Cells["ReviewedTo"].Value?.ToString();
+                string reviewedEvaluation = row.Cells["ReviewedEvaluation"].Value?.ToString();
 
-                progressDAL.InsertStudentProgress(studentId, _year, _month, memorizedFrom, memorizedTo, reviewedFrom, reviewedTo);
+                progressDAL.InsertStudentProgress(studentId, _year, _month, memorizedFrom, memorizedTo, memorizedEvaluation, reviewedFrom, reviewedTo, reviewedEvaluation);
             }
 
             MessageBox.Show("تم حفظ تقدم الطلاب بنجاح", "نجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);

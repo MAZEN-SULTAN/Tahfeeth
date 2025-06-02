@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\markez_ahl_alquran\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|C:\\Users\\hp\\source\\repos\\markez_ahl_alquran\\markez_ahl_alquran\\pl\\filterprogressform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|c:\\users\\hp\\source\\repos\\markez_ahl_alquran\\markez_ahl_alquran\\pl\\filterprogressform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|solutionrelative:markez_ahl_alquran\\pl\\filterprogressform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|c:\\users\\hp\\source\\repos\\markez_ahl_alquran\\markez_ahl_alquran\\pl\\filterprogressform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|solutionrelative:markez_ahl_alquran\\pl\\filterprogressform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|c:\\users\\hp\\source\\repos\\markez_ahl_alquran\\markez_ahl_alquran\\pl\\studentprogressentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|solutionrelative:markez_ahl_alquran\\pl\\studentprogressentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|C:\\Users\\hp\\source\\repos\\markez_ahl_alquran\\markez_ahl_alquran\\dal\\studentprogressdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|solutionrelative:markez_ahl_alquran\\dal\\studentprogressdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|C:\\Users\\hp\\source\\repos\\markez_ahl_alquran\\markez_ahl_alquran\\pl\\studentprogressentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|solutionrelative:markez_ahl_alquran\\pl\\studentprogressentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|c:\\users\\hp\\source\\repos\\markez_ahl_alquran\\markez_ahl_alquran\\dal\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|C:\\Users\\hp\\source\\repos\\markez_ahl_alquran\\markez_ahl_alquran\\dal\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|solutionrelative:markez_ahl_alquran\\dal\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|c:\\users\\hp\\source\\repos\\markez_ahl_alquran\\markez_ahl_alquran\\dal\\studentprogressdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|solutionrelative:markez_ahl_alquran\\dal\\studentprogressdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|C:\\Users\\hp\\source\\repos\\markez_ahl_alquran\\markez_ahl_alquran\\pl\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -30,19 +38,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DatabaseHelper.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\markez_ahl_alquran\\markez_ahl_alquran\\DAL\\DatabaseHelper.cs",
-              "RelativeDocumentMoniker": "markez_ahl_alquran\\DAL\\DatabaseHelper.cs",
-              "ToolTip": "C:\\Users\\hp\\source\\repos\\markez_ahl_alquran\\markez_ahl_alquran\\DAL\\DatabaseHelper.cs",
-              "RelativeToolTip": "markez_ahl_alquran\\DAL\\DatabaseHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABDAAAAAAAAAA==",
+              "Title": "StudentProgressEntry.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\markez_ahl_alquran\\markez_ahl_alquran\\PL\\StudentProgressEntry.cs",
+              "RelativeDocumentMoniker": "markez_ahl_alquran\\PL\\StudentProgressEntry.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\markez_ahl_alquran\\markez_ahl_alquran\\PL\\StudentProgressEntry.cs",
+              "RelativeToolTip": "markez_ahl_alquran\\PL\\StudentProgressEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T18:19:57.284Z",
+              "WhenOpened": "2025-06-02T19:23:35.994Z",
               "EditorCaption": ""
             },
             {
@@ -53,14 +61,14 @@
               "RelativeDocumentMoniker": "markez_ahl_alquran\\DAL\\StudentProgressDAL.cs",
               "ToolTip": "C:\\Users\\hp\\source\\repos\\markez_ahl_alquran\\markez_ahl_alquran\\DAL\\StudentProgressDAL.cs",
               "RelativeToolTip": "markez_ahl_alquran\\DAL\\StudentProgressDAL.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-01T12:43:52.853Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\markez_ahl_alquran\\markez_ahl_alquran\\PL\\MainForm.cs",
               "RelativeDocumentMoniker": "markez_ahl_alquran\\PL\\MainForm.cs",
@@ -71,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "StudentProgressEntry.cs [Design]",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\markez_ahl_alquran\\markez_ahl_alquran\\PL\\StudentProgressEntry.cs",
               "RelativeDocumentMoniker": "markez_ahl_alquran\\PL\\StudentProgressEntry.cs",
@@ -83,7 +91,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FilterProgressForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\markez_ahl_alquran\\markez_ahl_alquran\\PL\\FilterProgressForm.cs",
               "RelativeDocumentMoniker": "markez_ahl_alquran\\PL\\FilterProgressForm.cs",
@@ -92,6 +100,31 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-01T11:22:12.511Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FilterProgressForm.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\markez_ahl_alquran\\markez_ahl_alquran\\PL\\FilterProgressForm.cs",
+              "RelativeDocumentMoniker": "markez_ahl_alquran\\PL\\FilterProgressForm.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\markez_ahl_alquran\\markez_ahl_alquran\\PL\\FilterProgressForm.cs",
+              "RelativeToolTip": "markez_ahl_alquran\\PL\\FilterProgressForm.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAqwDQAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T19:11:48.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\markez_ahl_alquran\\markez_ahl_alquran\\DAL\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "markez_ahl_alquran\\DAL\\DatabaseHelper.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\markez_ahl_alquran\\markez_ahl_alquran\\DAL\\DatabaseHelper.cs",
+              "RelativeToolTip": "markez_ahl_alquran\\DAL\\DatabaseHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T18:19:57.284Z"
             }
           ]
         }

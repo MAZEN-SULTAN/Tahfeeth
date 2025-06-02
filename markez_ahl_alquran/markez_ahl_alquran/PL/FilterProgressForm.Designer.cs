@@ -212,6 +212,7 @@
             this.comboBoxMonth.Name = "comboBoxMonth";
             this.comboBoxMonth.Size = new System.Drawing.Size(227, 40);
             this.comboBoxMonth.TabIndex = 4;
+            this.comboBoxMonth.SelectedIndexChanged += new System.EventHandler(this.comboBoxMonth_SelectedIndexChanged);
             // 
             // btnNext
             // 
