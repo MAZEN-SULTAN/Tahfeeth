@@ -56,10 +56,11 @@
             this.bunifuPanel1.Controls.Add(this.btnManageStudents);
             this.bunifuPanel1.Controls.Add(this.btnManageClasses);
             this.bunifuPanel1.Controls.Add(this.btnManageTeacher);
-            this.bunifuPanel1.Location = new System.Drawing.Point(21, 27);
+            this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.bunifuPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(820, 730);
+            this.bunifuPanel1.Size = new System.Drawing.Size(215, 794);
             this.bunifuPanel1.TabIndex = 0;
             // 
             // btnStudentPresentManagment
@@ -109,7 +110,7 @@
             this.btnStudentPresentManagment.IdleIconLeftImage = null;
             this.btnStudentPresentManagment.IdleIconRightImage = null;
             this.btnStudentPresentManagment.IndicateFocus = false;
-            this.btnStudentPresentManagment.Location = new System.Drawing.Point(314, 35);
+            this.btnStudentPresentManagment.Location = new System.Drawing.Point(29, 366);
             this.btnStudentPresentManagment.Name = "btnStudentPresentManagment";
             this.btnStudentPresentManagment.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnStudentPresentManagment.OnDisabledState.BorderRadius = 1;
@@ -199,7 +200,7 @@
             this.btnStudentProgressEntry.IdleIconLeftImage = null;
             this.btnStudentProgressEntry.IdleIconRightImage = null;
             this.btnStudentProgressEntry.IndicateFocus = false;
-            this.btnStudentProgressEntry.Location = new System.Drawing.Point(609, 382);
+            this.btnStudentProgressEntry.Location = new System.Drawing.Point(29, 284);
             this.btnStudentProgressEntry.Name = "btnStudentProgressEntry";
             this.btnStudentProgressEntry.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnStudentProgressEntry.OnDisabledState.BorderRadius = 1;
@@ -289,7 +290,7 @@
             this.btnManageStudents.IdleIconLeftImage = null;
             this.btnManageStudents.IdleIconRightImage = null;
             this.btnManageStudents.IndicateFocus = false;
-            this.btnManageStudents.Location = new System.Drawing.Point(609, 266);
+            this.btnManageStudents.Location = new System.Drawing.Point(29, 205);
             this.btnManageStudents.Name = "btnManageStudents";
             this.btnManageStudents.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnManageStudents.OnDisabledState.BorderRadius = 1;
@@ -379,7 +380,7 @@
             this.btnManageClasses.IdleIconLeftImage = null;
             this.btnManageClasses.IdleIconRightImage = null;
             this.btnManageClasses.IndicateFocus = false;
-            this.btnManageClasses.Location = new System.Drawing.Point(609, 150);
+            this.btnManageClasses.Location = new System.Drawing.Point(29, 122);
             this.btnManageClasses.Name = "btnManageClasses";
             this.btnManageClasses.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnManageClasses.OnDisabledState.BorderRadius = 1;
@@ -469,7 +470,7 @@
             this.btnManageTeacher.IdleIconLeftImage = null;
             this.btnManageTeacher.IdleIconRightImage = null;
             this.btnManageTeacher.IndicateFocus = false;
-            this.btnManageTeacher.Location = new System.Drawing.Point(609, 35);
+            this.btnManageTeacher.Location = new System.Drawing.Point(29, 40);
             this.btnManageTeacher.Name = "btnManageTeacher";
             this.btnManageTeacher.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnManageTeacher.OnDisabledState.BorderRadius = 1;

@@ -83,5 +83,11 @@ namespace markez_ahl_alquran.PL
                 MessageBox.Show("تم الحذف بنجاح");
             }
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
+            this.Close();
+        }
     }
 }

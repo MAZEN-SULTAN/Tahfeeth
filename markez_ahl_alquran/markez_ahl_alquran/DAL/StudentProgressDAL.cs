@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -33,6 +34,31 @@ namespace markez_ahl_alquran.DAL
                 cmd.ExecuteNonQuery();
             }
         }
+
+        public DataTable GetMonthlyProgress(int studentId, int month, int year)
+        {
+            DataTable dt = new DataTable();
+
+            using (SqlConnection conn = dbHelper.GetConnection())
+            {
+                string query = @"SELECT HifzDetails, ReviewDetails, HifzEvaluation, ReviewEvaluation
+                         FROM StudentProgress
+                         WHERE StudentID = @StudentID AND [Month] = @Month AND [Year] = @Year";
+
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@StudentID", studentId);
+                    cmd.Parameters.AddWithValue("@Month", month);
+                    cmd.Parameters.AddWithValue("@Year", year);
+
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    adapter.Fill(dt);
+                }
+            }
+
+            return dt;
+        }
+
 
     }
 }

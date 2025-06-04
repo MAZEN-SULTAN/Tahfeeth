@@ -49,13 +49,19 @@ namespace markez_ahl_alquran.PL
         // داله تظهر الاشهر الميلادية في الفورم
         private void LoadMonths()
         {
-            var gregorianCulture = new System.Globalization.CultureInfo("en-US");
-            comboBoxMonth.Items.AddRange(gregorianCulture.DateTimeFormat.MonthNames
-                .Where(month => !string.IsNullOrEmpty(month))
-                .ToArray());
+            // تحديد الثقافة العربية مع التقويم الميلادي
+            var arabicCulture = new System.Globalization.CultureInfo("ar-SA");
+            arabicCulture.DateTimeFormat.Calendar = new System.Globalization.GregorianCalendar();
 
+            // جلب أسماء الأشهر الميلادية بالعربية
+            var arabicMonthNames = arabicCulture.DateTimeFormat.MonthNames
+                .Where(month => !string.IsNullOrEmpty(month))
+                .ToArray();
+
+            comboBoxMonth.Items.AddRange(arabicMonthNames);
             comboBoxMonth.SelectedIndex = DateTime.Now.Month - 1;
         }
+
 
 
         private void btnNext_Click(object sender, EventArgs e)

@@ -79,6 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BL\ClassBL.cs" />
+    <Compile Include="BL\MonthlyReportBL.cs" />
     <Compile Include="BL\Students.cs" />
     <Compile Include="BL\TeacherBL.cs" />
     <Compile Include="DAL\ClassDAL.cs" />
@@ -117,7 +118,19 @@
     <Compile Include="PL\MonthlyReport.Designer.cs">
       <DependentUpon>MonthlyReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\MonthlyReportDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\MonthlyReportDetails.Designer.cs">
+      <DependentUpon>MonthlyReportDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\Program.cs" />
+    <Compile Include="PL\StudentMonthlyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\StudentMonthlyReport.Designer.cs">
+      <DependentUpon>StudentMonthlyReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\StudentProgressEntry.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +164,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\MonthlyReport.resx">
       <DependentUpon>MonthlyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\MonthlyReportDetails.resx">
+      <DependentUpon>MonthlyReportDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\StudentMonthlyReport.resx">
+      <DependentUpon>StudentMonthlyReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\StudentProgressEntry.resx">
       <DependentUpon>StudentProgressEntry.cs</DependentUpon>

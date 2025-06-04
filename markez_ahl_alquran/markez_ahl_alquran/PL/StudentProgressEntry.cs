@@ -76,12 +76,24 @@ namespace markez_ahl_alquran.PL
             // من آية ... إلى آية
             dataGridViewProgress.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "من الحفظ", Name = "MemorizedFrom", Width = 180 });
             dataGridViewProgress.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "إلى ", Name = "MemorizedTo", Width = 180 });
-            dataGridViewProgress.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "التقييم ", Name = "MemorizedEvaluation", Width = 120 });
+            // تقييم الحفظ
+            DataGridViewComboBoxColumn memorizedEvalCol = new DataGridViewComboBoxColumn();
+            memorizedEvalCol.HeaderText = "تقييم الحفظ";
+            memorizedEvalCol.Name = "MemorizedEvaluation";
+            memorizedEvalCol.Width = 120;
+            memorizedEvalCol.Items.AddRange("ممتاز", "جيد جدًا", "جيد");
+            dataGridViewProgress.Columns.Add(memorizedEvalCol);
 
             // مراجعة من ... إلى
             dataGridViewProgress.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "مراجعة من", Name = "ReviewedFrom", Width = 180 });
             dataGridViewProgress.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "إلى", Name = "ReviewedTo", Width = 180 });
-            dataGridViewProgress.Columns.Add(new DataGridViewTextBoxColumn() { HeaderText = "التقييم ", Name = "ReviewedEvaluation", Width = 120 });
+            // تقييم المراجعة
+            DataGridViewComboBoxColumn reviewedEvalCol = new DataGridViewComboBoxColumn();
+            reviewedEvalCol.HeaderText = "تقييم المراجعة";
+            reviewedEvalCol.Name = "ReviewedEvaluation";
+            reviewedEvalCol.Width = 120;
+            reviewedEvalCol.Items.AddRange("ممتاز", "جيد جدًا", "جيد");
+            dataGridViewProgress.Columns.Add(reviewedEvalCol);
         }   
 
 

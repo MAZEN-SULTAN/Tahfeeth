@@ -89,25 +89,35 @@ namespace markez_ahl_alquran.PL
             }
 
             if (!int.TryParse(TextPresentDays.Text, out int present) ||
-                !int.TryParse(TextAbsentDays.Text, out int absent))
+       !int.TryParse(TextExcusedAbsences.Text, out int excused) ||
+       !int.TryParse(TextUnexcusedAbsences.Text, out int unexcused))
             {
                 MessageBox.Show("يرجى إدخال أرقام صحيحة لأيام الحضور والغياب");
                 return;
             }
 
+
+
             string notes = TextNotes.Text;
 
             MonthlyReportDAL dal = new MonthlyReportDAL();
-            bool result = dal.AddMonthlyReport(studentId, month, year, present, absent, notes);
+            bool result = dal.AddMonthlyReport(studentId, month, year, present, excused, unexcused, notes);
 
-            if (result)
-                MessageBox.Show("تم حفظ التقرير بنجاح");
+            if (result) { 
+                MessageBox.Show("تم حفظ الحضور والغياب بنجاح", "نجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Close();
+            }
             else
                 MessageBox.Show("حدث خطأ أثناء حفظ التقرير");
         }
 
 
         private void bunifuLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextAbsentDays_TextChanged(object sender, EventArgs e)
         {
 
         }

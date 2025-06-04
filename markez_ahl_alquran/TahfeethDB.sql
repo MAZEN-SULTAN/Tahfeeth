@@ -85,7 +85,8 @@ CREATE TABLE MonthlyReport (
     Month INT NOT NULL,           -- 1 = يناير، 2 = فبراير، إلخ
     Year INT NOT NULL,
     DaysPresent INT NOT NULL,     -- عدد أيام الحضور
-    DaysAbsent INT NOT NULL,      -- عدد أيام الغياب
+    ExcusedAbsences INT NOT NULL,      -- عدد أيام الغياب بعذر
+	UnexcusedAbsences INT NOT NULL,      -- عدد أيام الغياب بدون عذر
     Notes NVARCHAR(255),          -- ملاحظات إضافية (اختياري)
     CONSTRAINT FK_Student_MonthlyReport FOREIGN KEY (StudentID) REFERENCES Students(StudentID)
 );

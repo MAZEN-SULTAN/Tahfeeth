@@ -109,5 +109,12 @@ namespace markez_ahl_alquran.PL
             dgvTeacher.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             dgvTeacher.EnableHeadersVisualStyles = false;
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
+            this.Close();
+
+        }
     }
 }
