@@ -1,4 +1,6 @@
 ﻿using markez_ahl_alquran.DAL;
+using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
 using System;
 using System.Collections.Generic;
 using System.Data;

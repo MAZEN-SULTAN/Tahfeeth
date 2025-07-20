@@ -61,6 +61,22 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
       <HintPath>..\..\BunifuCrack-main\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
     </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win64_x64\dotnet\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win64_x64\dotnet\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win64_x64\dotnet\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win64_x64\dotnet\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
@@ -80,11 +96,14 @@
   <ItemGroup>
     <Compile Include="BL\ClassBL.cs" />
     <Compile Include="BL\MonthlyReportBL.cs" />
+    <Compile Include="BL\StudentMonthlyReportBL.cs" />
+    <Compile Include="BL\StudentProgressBL.cs" />
     <Compile Include="BL\Students.cs" />
     <Compile Include="BL\TeacherBL.cs" />
     <Compile Include="DAL\ClassDAL.cs" />
     <Compile Include="DAL\DatabaseHelper.cs" />
     <Compile Include="DAL\MonthlyReportDAL.cs" />
+    <Compile Include="DAL\StudentMonthlyReportDAL.cs" />
     <Compile Include="DAL\StudentProgressDAL.cs" />
     <Compile Include="DAL\StudentsDAL.cs" />
     <Compile Include="DAL\TeacherDAL.cs" />
@@ -125,6 +144,12 @@
       <DependentUpon>MonthlyReportDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="PL\Program.cs" />
+    <Compile Include="PL\ReportsMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\ReportsMainForm.Designer.cs">
+      <DependentUpon>ReportsMainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\StudentMonthlyReport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +175,12 @@
       <DependentUpon>Teachers.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentMonthlyReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudentMonthlyReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="PL\AddStudents.resx">
       <DependentUpon>AddStudents.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +198,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\MonthlyReportDetails.resx">
       <DependentUpon>MonthlyReportDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\ReportsMainForm.resx">
+      <DependentUpon>ReportsMainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\StudentMonthlyReport.resx">
       <DependentUpon>StudentMonthlyReport.cs</DependentUpon>
@@ -190,6 +224,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StudentMonthlyReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StudentMonthlyReport.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -201,6 +239,8 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

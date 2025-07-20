@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
 
 namespace markez_ahl_alquran.PL
 {
@@ -63,7 +65,7 @@ namespace markez_ahl_alquran.PL
             int year = Convert.ToInt32(txtYear.Text);
 
             // فتح نافذة التقرير التفصيلي وتمرير البيانات إليها
-            MonthlyReportDetails reportForm = new MonthlyReportDetails(studentId, studentName, month, year);
+            MonthlyReportDetails reportForm = new MonthlyReportDetails(studentId, month, year);
             reportForm.ShowDialog();
         }
     }

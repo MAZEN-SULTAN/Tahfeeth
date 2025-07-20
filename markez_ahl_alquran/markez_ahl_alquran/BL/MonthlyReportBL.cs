@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Data;
 using markez_ahl_alquran.DAL;
+using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
 
 namespace markez_ahl_alquran.BL
 {
@@ -32,3 +34,4 @@ namespace markez_ahl_alquran.BL
         }
     }
 }
+

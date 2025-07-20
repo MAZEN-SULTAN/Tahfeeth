@@ -50,6 +50,7 @@ namespace markez_ahl_alquran.DAL
                     cmd.Parameters.AddWithValue("@StudentID", studentId);
                     cmd.Parameters.AddWithValue("@Month", month);
                     cmd.Parameters.AddWithValue("@Year", year);
+                    //cmd.Parameters.AddWithValue("@StudentName", studentName);
 
                     SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                     adapter.Fill(dt);

@@ -12,6 +12,8 @@ using System.Globalization;
 using markez_ahl_alquran.DAL;
 using System.Data.SqlClient;
 using markez_ahl_alquran.BL;
+using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
 
 
 namespace markez_ahl_alquran.PL

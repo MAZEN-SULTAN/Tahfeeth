@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Shared;
 
 namespace markez_ahl_alquran.PL
 {
@@ -55,6 +57,12 @@ namespace markez_ahl_alquran.PL
         {
             MonthlyReport AbsentManagment = new MonthlyReport();
             AbsentManagment.ShowDialog();
+        }
+
+        private void btnReportsManagement_Click(object sender, EventArgs e)
+        {
+            ReportsMainForm MainReportForm = new ReportsMainForm();
+            MainReportForm.ShowDialog();
         }
     }
 }
