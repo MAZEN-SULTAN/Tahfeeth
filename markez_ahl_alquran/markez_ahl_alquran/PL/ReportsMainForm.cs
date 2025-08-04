@@ -13,7 +13,7 @@ namespace markez_ahl_alquran.PL
 {
     public partial class ReportsMainForm : Form
     {
-        // خزن المعرّفات لكل حلقة وطالب
+        // قواميس لتخزين المعرفات
         private readonly Dictionary<string, int> classMap = new Dictionary<string, int>();
         private readonly Dictionary<string, int> studentMap = new Dictionary<string, int>();
 
@@ -22,64 +22,51 @@ namespace markez_ahl_alquran.PL
             InitializeComponent();
             InitializeReportTypes();
             grpMonthlyReport.Visible = false;
-            //grpAdmin.Visible = false;
         }
 
         private void ReportsMainForm_Load(object sender, EventArgs e)
         {
+            // إخفاء المجموعة عند البداية
             grpMonthlyReport.Visible = false;
 
-            // ✅ الربط اليدوي للحدث (إذا لم يتم من المصمم)
+            // ربط الأحداث يدوياً لضمان عملها
             cmbReportType.SelectedIndexChanged += cmbReportType_SelectedIndexChanged;
+            cmbClass.SelectedIndexChanged += cmbClass_SelectedIndexChanged;
+
+            // تحميل أنواع التقارير
+            InitializeReportTypes();
         }
-
-
-        //private void btnTest_Click(object sender, EventArgs e)
-        //{
-        //    grpMonthlyReport.Visible = true;
-        //}
 
         // تعبئة قائمة أنواع التقارير
         private void InitializeReportTypes()
         {
             cmbReportType.Items.Clear();
-            cmbReportType.Items.Add("تقرير شهري للطالب");
-            cmbReportType.Items.Add("تقرير إداري ومالي");
-            cmbReportType.SelectedIndex = 0;
-
-            // 🔧 استدعاء الحدث يدويًا
-            cmbReportType_SelectedIndexChanged(cmbReportType, EventArgs.Empty);
+            cmbReportType.Items.Add("تقرير شهري للطالب"); // index 0
+            cmbReportType.Items.Add("تقرير إداري ومالي"); // index 1
+            cmbReportType.SelectedIndex = -1; // 🔹 لا يوجد اختيار افتراضي
         }
-
 
         // عند تغيير نوع التقرير
         private void cmbReportType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbReportType.SelectedItem != null && cmbReportType.SelectedItem.ToString() == "تقرير شهري للطلاب")
+            if (cmbReportType.SelectedItem != null && cmbReportType.SelectedItem.ToString() == "تقرير شهري للطالب")
             {
-                // إظهار لوحة إعداد التقرير الشهري
                 grpMonthlyReport.Visible = true;
-
-                // تحميل البيانات إلى الحقول
                 LoadMonthlyControls();
             }
             else
             {
-                // إخفاء الحقول في حال نوع تقرير آخر
                 grpMonthlyReport.Visible = false;
             }
         }
 
-
-
-        // تهيئة عناصر تقرير الطلاب الشهري
+        // تحميل بيانات التقرير الشهري
         private void LoadMonthlyControls()
         {
-            // حلقة
+            // تحميل الحلقات
             classMap.Clear();
             cmbClass.Items.Clear();
-            var classDal = new ClassDAL();
-            DataTable dtClasses = classDal.GetAllClasses();
+            DataTable dtClasses = new ClassDAL().GetAllClasses();
             foreach (DataRow r in dtClasses.Rows)
             {
                 string name = r["ClassName"].ToString();
@@ -87,8 +74,9 @@ namespace markez_ahl_alquran.PL
                 cmbClass.Items.Add(name);
                 classMap[name] = id;
             }
+            MessageBox.Show($"تم تحميل {dtClasses.Rows.Count} حلقة من قاعدة البيانات");
 
-            // خامسة: الطلاب يرتبط بالحلقة
+            // تصفير الطلاب
             cmbStudent.Items.Clear();
             studentMap.Clear();
 
@@ -100,21 +88,35 @@ namespace markez_ahl_alquran.PL
             cmbMonth.SelectedIndex = DateTime.Now.Month - 1;
 
             // السنة
-            int cur = DateTime.Now.Year;
-            numYear.Minimum = cur - 2;
-            numYear.Maximum = cur + 1;
-            numYear.Value = cur;
+            int curYear = DateTime.Now.Year;
+            numYear.Minimum = curYear - 2;
+            numYear.Maximum = curYear + 1;
+            numYear.Value = curYear;
         }
 
-        // عند اختيار الحلقة لتحميل طلابها
+        // عند اختيار الحلقة تحميل الطلاب
         private void cmbClass_SelectedIndexChanged(object sender, EventArgs e)
         {
             cmbStudent.Items.Clear();
             studentMap.Clear();
+
             if (cmbClass.SelectedIndex < 0) return;
-            int cid = classMap[cmbClass.SelectedItem.ToString()];
+
+            string selectedClass = cmbClass.SelectedItem.ToString();
+            MessageBox.Show($"تم اختيار الحلقة: {selectedClass}");
+
+            if (!classMap.ContainsKey(selectedClass))
+            {
+                MessageBox.Show("اسم الحلقة غير موجود في classMap");
+                return;
+            }
+
+            int cid = classMap[selectedClass];
             var studentDal = new StudentsDAL();
             DataTable dtStudents = studentDal.GetStudentsByClass(cid);
+
+            MessageBox.Show($"تم جلب {dtStudents.Rows.Count} طالب من قاعدة البيانات");
+
             foreach (DataRow r in dtStudents.Rows)
             {
                 string name = r["FullName"].ToString();
@@ -124,7 +126,8 @@ namespace markez_ahl_alquran.PL
             }
         }
 
-        // زر عرض التقرير الشهري
+
+        // عرض التقرير
         private void btnShowMonthly_Click(object sender, EventArgs e)
         {
             if (cmbStudent.SelectedIndex < 0)
@@ -139,11 +142,9 @@ namespace markez_ahl_alquran.PL
 
             DataTable dt = new StudentMonthlyReportBL().GetStudentMonthlyData(sid, mon, yr);
 
-            // تأكد أن التقرير لديه نفس أسماء الأعمدة الموجودة في dt
-
             using (var viewerForm = new Form())
             {
-                ReportDocument rpt = new ReportDocument(); // استخدم ReportDocument
+                ReportDocument rpt = new ReportDocument();
                 string reportPath = Path.Combine(Application.StartupPath, "StudentMonthlyReport.rpt");
 
                 if (!File.Exists(reportPath))
@@ -152,8 +153,8 @@ namespace markez_ahl_alquran.PL
                     return;
                 }
 
-                rpt.Load(reportPath); // تحميل التقرير
-                rpt.SetDataSource(dt); // ربط مصدر البيانات
+                rpt.Load(reportPath);
+                rpt.SetDataSource(dt);
 
                 var viewer = new CrystalDecisions.Windows.Forms.CrystalReportViewer
                 {
@@ -168,7 +169,7 @@ namespace markez_ahl_alquran.PL
             }
         }
 
-        // زر تصدير التقرير الشهري (PDF/Word)
+        // تصدير التقرير
         private void btnExportMonthly_Click(object sender, EventArgs e)
         {
             if (cmbStudent.SelectedIndex < 0)
@@ -180,15 +181,12 @@ namespace markez_ahl_alquran.PL
             int sid = studentMap[cmbStudent.SelectedItem.ToString()];
             int mon = cmbMonth.SelectedIndex + 1;
             int yr = (int)numYear.Value;
-
             DataTable dt = new StudentMonthlyReportBL().GetStudentMonthlyData(sid, mon, yr);
 
             using (var dlg = new SaveFileDialog())
             {
                 dlg.Filter = "PDF (*.pdf)|*.pdf|Word (*.docx)|*.docx";
                 if (dlg.ShowDialog() != DialogResult.OK) return;
-
-                string path = dlg.FileName;
 
                 ReportDocument rpt = new ReportDocument();
                 string reportPath = Path.Combine(Application.StartupPath, "StudentMonthlyReport.rpt");
@@ -199,21 +197,16 @@ namespace markez_ahl_alquran.PL
                     return;
                 }
 
-                rpt.Load(reportPath); // تحميل التقرير
-                rpt.SetDataSource(dt); // ربط البيانات
+                rpt.Load(reportPath);
+                rpt.SetDataSource(dt);
 
                 if (dlg.FilterIndex == 1)
-                {
-                    rpt.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, path);
-                }
+                    rpt.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.PortableDocFormat, dlg.FileName);
                 else
-                {
-                    rpt.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.WordForWindows, path);
-                }
+                    rpt.ExportToDisk(CrystalDecisions.Shared.ExportFormatType.WordForWindows, dlg.FileName);
 
                 MessageBox.Show("تم التصدير بنجاح.", "نجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-
     }
 }
