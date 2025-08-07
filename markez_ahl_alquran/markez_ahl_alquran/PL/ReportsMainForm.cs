@@ -1,4 +1,5 @@
 ﻿using CrystalDecisions.CrystalReports.Engine;
+using CrystalDecisions.Windows.Forms;
 using markez_ahl_alquran.BL;
 using markez_ahl_alquran.DAL;
 using System;
@@ -130,7 +131,6 @@ namespace markez_ahl_alquran.PL
         // عرض التقرير
         private void btnShowMonthly_Click(object sender, EventArgs e)
         {
-            
             if (cmbStudent.SelectedIndex < 0)
             {
                 MessageBox.Show("يرجى اختيار الطالب لعرض التقرير.", "تنبيه", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -138,25 +138,37 @@ namespace markez_ahl_alquran.PL
             }
 
             int sid = studentMap[cmbStudent.SelectedItem.ToString()];
-            int mon = cmbMonth.SelectedIndex + 1;
-            int yr = (int)numYear.Value;
+           // int mon = cmbMonth.SelectedIndex + 1;
+          //  int yr = (int)numYear.Value;
+           // int classId = GetClassIdByStudentId(sid); // اكتب طريقتك لجلب ClassID هنا
 
-            DataTable dt = new StudentMonthlyReportBL().GetStudentMonthlyData(sid, mon, yr);
+            ReportDocument rpt = new ReportDocument();
+            string reportPath = Path.Combine(Application.StartupPath, "StudentMonthlyReport.rpt");
 
-            using (var viewerForm = new Form())
+            if (!File.Exists(reportPath))
             {
-                ReportDocument rpt = new ReportDocument();
-                string reportPath = Path.Combine(Application.StartupPath, "StudentMonthlyReport.rpt");
+                MessageBox.Show("لم يتم العثور على ملف التقرير.", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
-                if (!File.Exists(reportPath))
-                {
-                    MessageBox.Show("لم يتم العثور على ملف التقرير.", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
+            rpt.Load(reportPath);
 
-                rpt.Load(reportPath);
-                rpt.SetDataSource(dt);
+            // مهم جدًا: تمرير كل المعاملات المطلوبة للتقرير
+            rpt.SetParameterValue("StudentID", sid);
+           // rpt.SetParameterValue("ClassID", classId);
+           // rpt.SetParameterValue("Month", mon);
+            //rpt.SetParameterValue("Year", yr);
 
+
+            // إذا كان التقرير يحتاج ClassID أيضًا، مرره (حسب التصميم)
+            // rpt.SetParameterValue("ClassID", classId);
+
+            // إعداد الاتصال بقاعدة البيانات (إذا كان مطلوبًا)
+            //SetReportDbConnection(rpt);
+
+            // عرض التقرير في فورم جديد
+            using (Form viewerForm = new Form())
+            {
                 var viewer = new CrystalDecisions.Windows.Forms.CrystalReportViewer
                 {
                     Dock = DockStyle.Fill,
@@ -169,6 +181,7 @@ namespace markez_ahl_alquran.PL
                 viewerForm.ShowDialog();
             }
         }
+
 
         // تصدير التقرير
         private void btnExportMonthly_Click(object sender, EventArgs e)

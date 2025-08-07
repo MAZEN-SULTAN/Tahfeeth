@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "E:\\tarteel\\Tahfeeth\\markez_ahl_alquran\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|E:\\tarteel\\Tahfeeth\\markez_ahl_alquran\\markez_ahl_alquran\\studentmonthlyreport.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
-      "RelativeMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|solutionrelative:markez_ahl_alquran\\studentmonthlyreport.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
+      "AbsoluteMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|E:\\tarteel\\Tahfeeth\\markez_ahl_alquran\\markez_ahl_alquran\\pl\\reportsmainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|solutionrelative:markez_ahl_alquran\\pl\\reportsmainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|e:\\tarteel\\tahfeeth\\markez_ahl_alquran\\markez_ahl_alquran\\pl\\reportsmainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|solutionrelative:markez_ahl_alquran\\pl\\reportsmainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|E:\\tarteel\\Tahfeeth\\markez_ahl_alquran\\markez_ahl_alquran\\pl\\reportsmainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|solutionrelative:markez_ahl_alquran\\pl\\reportsmainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|E:\\tarteel\\Tahfeeth\\markez_ahl_alquran\\markez_ahl_alquran\\dal\\studentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|solutionrelative:markez_ahl_alquran\\dal\\studentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|e:\\tarteel\\tahfeeth\\markez_ahl_alquran\\markez_ahl_alquran\\studentmonthlyreport.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
+      "RelativeMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|solutionrelative:markez_ahl_alquran\\studentmonthlyreport.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|E:\\tarteel\\Tahfeeth\\markez_ahl_alquran\\markez_ahl_alquran\\pl\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|solutionrelative:markez_ahl_alquran\\pl\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|E:\\tarteel\\Tahfeeth\\markez_ahl_alquran\\markez_ahl_alquran\\dal\\studentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|solutionrelative:markez_ahl_alquran\\dal\\studentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74CE0342-68F3-4C70-8264-C15A7B1B7653}|markez_ahl_alquran\\markez_ahl_alquran.csproj|E:\\tarteel\\Tahfeeth\\markez_ahl_alquran\\markez_ahl_alquran\\pl\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,19 +42,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "StudentMonthlyReport.rpt",
+              "DocumentMoniker": "E:\\tarteel\\Tahfeeth\\markez_ahl_alquran\\markez_ahl_alquran\\StudentMonthlyReport.rpt",
+              "RelativeDocumentMoniker": "markez_ahl_alquran\\StudentMonthlyReport.rpt",
+              "ToolTip": "E:\\tarteel\\Tahfeeth\\markez_ahl_alquran\\markez_ahl_alquran\\StudentMonthlyReport.rpt",
+              "RelativeToolTip": "markez_ahl_alquran\\StudentMonthlyReport.rpt",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPdSURBVDhPrZRbaBxVGMf/c9nd2Vuyu9nN5m7aStI2oWtSCBgtWgj10oe2D2Le1FRRBBEk\u002BCJo8amIIL5U0BfFF6mFalOs0CdrWqhJNkmTUEyyzaXuJpvsdXZ2dnauntmdbJvEvvkb/pxvZr7vP\u002Bec\u002BTj4XzEMg7LCCj39z7/y6vC7n1m3T2RtaWHi8ncXP7Bud8FaYwVPnS94pPeZgcihIBiGBkWuvfyzXcC0P9SsKrJ08\u002Br3XxbymaT1qgJjjRXaOrsiz518\u002BdyJSCv8Xid8HgcCXo7Ej1QQZciGrf7EswN9W\u002BlMLpva3hCLfNayAG2NNcw50RSFYklBtiAhs0diWYXXZcfxo23O4fMfXewbHHrNWx8IV6v/w7AGcSa\u002B\u002B0VebeVEXBuPgSezPT383qdDZ98YrRY9YYYmDKlm6KpkWsLvxhg2qTjaw14M9rRg4EgTBntbcKCtwel2OzmrbLchRUxoYmBe5kjTNAS6gHvGLK4LV/FD/lssUBMIB9xosuThbOSjj2z2GJr7txNTyGgpLGl/Y5G6j/viPH4VruAX4WfMKzOVD5qzN/Meh2ZcjRxRHZGPste7dIOGphuQjCKiUhTjpXFojAyH7oCmabjJ38Cl9FfIKCkYlLbPkG0\u002Bc/lFQI\u002BQOEg1cpGlDYP8TQVjxetYLi9DhYZcKYdCloeqqSQViKYn8f7GCL4\u002BdolsjrPqZMF\u002B8\u002BExV1lRfGleaY5tlP0zqzIu/JQC6\u002BtCOryCXDgKw6OD1hhIs2WU4xI6mjsx\u002BvrHaORCyFCCZVWFVgtri7qw/mebt3Br4BC73NPBIZGWEVsM4uFsL9KrByGyAkkkWxFX0cf24/zRt/FC6CQ8Ns\u002B\u002BJTM5tX47OrOwSp6vdbb6Q4c73Kc4O4tYUkN6MwRKDsLuT0HMJ/CU1I43B0bw1tBIxcjUZlpAdGpqYvavWzcqhrH524jN39FFxVZk65qebm1uOHeqP4BkXsc2r0NM\u002BWE8OAy7L4rPX/oEZyJnwZI22WmvZKaE6ejkxPTdqmGtbebu/oa529dgt7FwO\u002B3obnGgI2iDi2PgdzRg9MAFdLl6YZBcilSZKzXbj5whtVYzqRlKRR6lYp4kUzBbJ1cCNFJZ72Hhd9sRtIXB6nboul5b7uPaoWZoompAtghMLEuIZwxyhDFoD9LoDqvI8SISKQFxcnytb/E1lWS1cpjssOs8pGiGVw37yty61Ej\u002BC9cZouBlVTHoKKTWE7liOsvL0EpaucSbK6\u002BR2kqsWeFuw5YAN336eOCLsqK\u002BIxSl7rwgI54UZhaWtn9cXElOKqr28N6dMX7qjyuKVbIH4F/CwpxOdjf1iQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-08-07T12:04:37.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "StudentsDAL.cs",
               "DocumentMoniker": "E:\\tarteel\\Tahfeeth\\markez_ahl_alquran\\markez_ahl_alquran\\DAL\\StudentsDAL.cs",
               "RelativeDocumentMoniker": "markez_ahl_alquran\\DAL\\StudentsDAL.cs",
               "ToolTip": "E:\\tarteel\\Tahfeeth\\markez_ahl_alquran\\markez_ahl_alquran\\DAL\\StudentsDAL.cs",
               "RelativeToolTip": "markez_ahl_alquran\\DAL\\StudentsDAL.cs",
-              "ViewState": "AQIAAH8AAAAAAAAAAAAYwIQAAAAHAAAA",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAgwIQAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T12:08:05.714Z"
+              "WhenOpened": "2025-07-31T12:08:05.714Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -66,42 +79,19 @@
               "RelativeToolTip": "markez_ahl_alquran\\PL\\MainForm.cs",
               "ViewState": "AQIAACwAAAAAAAAAAAAvwEAAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T12:08:07.741Z"
+              "WhenOpened": "2025-07-20T12:08:07.741Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "E:\\tarteel\\Tahfeeth\\markez_ahl_alquran\\markez_ahl_alquran\\PL\\MainForm.cs",
               "RelativeDocumentMoniker": "markez_ahl_alquran\\PL\\MainForm.cs",
               "ToolTip": "E:\\tarteel\\Tahfeeth\\markez_ahl_alquran\\markez_ahl_alquran\\PL\\MainForm.cs [Design]",
               "RelativeToolTip": "markez_ahl_alquran\\PL\\MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T12:07:52.086Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ReportsMainForm.cs",
-              "DocumentMoniker": "E:\\tarteel\\Tahfeeth\\markez_ahl_alquran\\markez_ahl_alquran\\PL\\ReportsMainForm.cs",
-              "RelativeDocumentMoniker": "markez_ahl_alquran\\PL\\ReportsMainForm.cs",
-              "ToolTip": "E:\\tarteel\\Tahfeeth\\markez_ahl_alquran\\markez_ahl_alquran\\PL\\ReportsMainForm.cs",
-              "RelativeToolTip": "markez_ahl_alquran\\PL\\ReportsMainForm.cs",
-              "ViewState": "AQIAAIMAAAAAAAAAAADgv4oAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T11:28:43.041Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ReportsMainForm.cs [Design]",
-              "DocumentMoniker": "E:\\tarteel\\Tahfeeth\\markez_ahl_alquran\\markez_ahl_alquran\\PL\\ReportsMainForm.cs",
-              "RelativeDocumentMoniker": "markez_ahl_alquran\\PL\\ReportsMainForm.cs",
-              "ToolTip": "E:\\tarteel\\Tahfeeth\\markez_ahl_alquran\\markez_ahl_alquran\\PL\\ReportsMainForm.cs [Design]",
-              "RelativeToolTip": "markez_ahl_alquran\\PL\\ReportsMainForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T11:28:39.109Z",
+              "WhenOpened": "2025-07-20T12:07:52.086Z",
               "EditorCaption": " [Design]"
             },
             {
@@ -126,17 +116,72 @@
               "ViewState": "AQIAAFIAAAAAAAAAAAAkwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-20T11:26:16.411Z"
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "de73f7e1-0327-4a70-b695-4856c7ae92d3",
+        "Display": 0,
+        "X": 32,
+        "Y": 70,
+        "Width": 1496,
+        "Height": 774,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "StudentMonthlyReport.rpt",
-              "DocumentMoniker": "E:\\tarteel\\Tahfeeth\\markez_ahl_alquran\\markez_ahl_alquran\\StudentMonthlyReport.rpt",
-              "RelativeDocumentMoniker": "markez_ahl_alquran\\StudentMonthlyReport.rpt",
-              "ToolTip": "E:\\tarteel\\Tahfeeth\\markez_ahl_alquran\\markez_ahl_alquran\\StudentMonthlyReport.rpt",
-              "RelativeToolTip": "markez_ahl_alquran\\StudentMonthlyReport.rpt",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPdSURBVDhPrZRbaBxVGMf/c9nd2Vuyu9nN5m7aStI2oWtSCBgtWgj10oe2D2Le1FRRBBEk\u002BCJo8amIIL5U0BfFF6mFalOs0CdrWqhJNkmTUEyyzaXuJpvsdXZ2dnauntmdbJvEvvkb/pxvZr7vP\u002Bec\u002BTj4XzEMg7LCCj39z7/y6vC7n1m3T2RtaWHi8ncXP7Bud8FaYwVPnS94pPeZgcihIBiGBkWuvfyzXcC0P9SsKrJ08\u002Br3XxbymaT1qgJjjRXaOrsiz518\u002BdyJSCv8Xid8HgcCXo7Ej1QQZciGrf7EswN9W\u002BlMLpva3hCLfNayAG2NNcw50RSFYklBtiAhs0diWYXXZcfxo23O4fMfXewbHHrNWx8IV6v/w7AGcSa\u002B\u002B0VebeVEXBuPgSezPT383qdDZ98YrRY9YYYmDKlm6KpkWsLvxhg2qTjaw14M9rRg4EgTBntbcKCtwel2OzmrbLchRUxoYmBe5kjTNAS6gHvGLK4LV/FD/lssUBMIB9xosuThbOSjj2z2GJr7txNTyGgpLGl/Y5G6j/viPH4VruAX4WfMKzOVD5qzN/Meh2ZcjRxRHZGPste7dIOGphuQjCKiUhTjpXFojAyH7oCmabjJ38Cl9FfIKCkYlLbPkG0\u002Bc/lFQI\u002BQOEg1cpGlDYP8TQVjxetYLi9DhYZcKYdCloeqqSQViKYn8f7GCL4\u002BdolsjrPqZMF\u002B8\u002BExV1lRfGleaY5tlP0zqzIu/JQC6\u002BtCOryCXDgKw6OD1hhIs2WU4xI6mjsx\u002BvrHaORCyFCCZVWFVgtri7qw/mebt3Br4BC73NPBIZGWEVsM4uFsL9KrByGyAkkkWxFX0cf24/zRt/FC6CQ8Ns\u002B\u002BJTM5tX47OrOwSp6vdbb6Q4c73Kc4O4tYUkN6MwRKDsLuT0HMJ/CU1I43B0bw1tBIxcjUZlpAdGpqYvavWzcqhrH524jN39FFxVZk65qebm1uOHeqP4BkXsc2r0NM\u002BWE8OAy7L4rPX/oEZyJnwZI22WmvZKaE6ejkxPTdqmGtbebu/oa529dgt7FwO\u002B3obnGgI2iDi2PgdzRg9MAFdLl6YZBcilSZKzXbj5whtVYzqRlKRR6lYp4kUzBbJ1cCNFJZ72Hhd9sRtIXB6nboul5b7uPaoWZoompAtghMLEuIZwxyhDFoD9LoDqvI8SISKQFxcnytb/E1lWS1cpjssOs8pGiGVw37yty61Ej\u002BC9cZouBlVTHoKKTWE7liOsvL0EpaucSbK6\u002BR2kqsWeFuw5YAN336eOCLsqK\u002BIxSl7rwgI54UZhaWtn9cXElOKqr28N6dMX7qjyuKVbIH4F/CwpxOdjf1iQAAAABJRU5ErkJggg==",
-              "WhenOpened": "2025-07-20T10:47:31.227Z",
+              "Title": "ReportsMainForm.cs [Design]",
+              "DocumentMoniker": "E:\\tarteel\\Tahfeeth\\markez_ahl_alquran\\markez_ahl_alquran\\PL\\ReportsMainForm.cs",
+              "RelativeDocumentMoniker": "markez_ahl_alquran\\PL\\ReportsMainForm.cs",
+              "ToolTip": "E:\\tarteel\\Tahfeeth\\markez_ahl_alquran\\markez_ahl_alquran\\PL\\ReportsMainForm.cs [Design]",
+              "RelativeToolTip": "markez_ahl_alquran\\PL\\ReportsMainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T11:28:39.109Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "e49634c8-b168-4892-aa2a-790e70cc6cb9",
+        "Display": 0,
+        "X": 32,
+        "Y": 70,
+        "Width": 1496,
+        "Height": 749,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReportsMainForm.cs",
+              "DocumentMoniker": "E:\\tarteel\\Tahfeeth\\markez_ahl_alquran\\markez_ahl_alquran\\PL\\ReportsMainForm.cs",
+              "RelativeDocumentMoniker": "markez_ahl_alquran\\PL\\ReportsMainForm.cs",
+              "ToolTip": "E:\\tarteel\\Tahfeeth\\markez_ahl_alquran\\markez_ahl_alquran\\PL\\ReportsMainForm.cs",
+              "RelativeToolTip": "markez_ahl_alquran\\PL\\ReportsMainForm.cs",
+              "ViewState": "AQIAAIAAAAAAAAAAAAAlwI0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T12:49:38.177Z",
               "EditorCaption": ""
             }
           ]
