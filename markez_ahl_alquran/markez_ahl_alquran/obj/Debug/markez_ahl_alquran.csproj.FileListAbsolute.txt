@@ -95,3 +95,5 @@ E:\tarteel\Tahfeeth\markez_ahl_alquran\markez_ahl_alquran\bin\Debug\CrystalDecis
 E:\tarteel\Tahfeeth\markez_ahl_alquran\markez_ahl_alquran\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 E:\tarteel\Tahfeeth\markez_ahl_alquran\markez_ahl_alquran\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 E:\tarteel\Tahfeeth\markez_ahl_alquran\markez_ahl_alquran\bin\Debug\stdole.dll
+E:\tarteel\Tahfeeth\markez_ahl_alquran\markez_ahl_alquran\bin\Debug\StudentMonthlyReport.rpt
+E:\tarteel\Tahfeeth\markez_ahl_alquran\markez_ahl_alquran\bin\Debug\StudentMonthlyReport.cs

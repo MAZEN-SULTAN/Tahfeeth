@@ -180,6 +180,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>StudentMonthlyReport.rpt</DependentUpon>
       <SubType>Component</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <EmbeddedResource Include="PL\AddStudents.resx">
       <DependentUpon>AddStudents.cs</DependentUpon>
@@ -227,6 +228,7 @@
     <EmbeddedResource Include="StudentMonthlyReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>StudentMonthlyReport.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

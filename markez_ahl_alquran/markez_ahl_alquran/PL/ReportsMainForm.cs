@@ -63,7 +63,7 @@ namespace markez_ahl_alquran.PL
         // تحميل بيانات التقرير الشهري
         private void LoadMonthlyControls()
         {
-            // تحميل الحلقات
+            // تحميل الحلقاتبان التقرير غير موجود
             classMap.Clear();
             cmbClass.Items.Clear();
             DataTable dtClasses = new ClassDAL().GetAllClasses();
@@ -130,6 +130,7 @@ namespace markez_ahl_alquran.PL
         // عرض التقرير
         private void btnShowMonthly_Click(object sender, EventArgs e)
         {
+            
             if (cmbStudent.SelectedIndex < 0)
             {
                 MessageBox.Show("يرجى اختيار الطالب لعرض التقرير.", "تنبيه", MessageBoxButtons.OK, MessageBoxIcon.Warning);
